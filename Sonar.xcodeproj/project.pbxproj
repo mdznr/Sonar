@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90DE4BB15A42641005A9CA0 /* DSClickableURLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE4BA15A42641005A9CA0 /* DSClickableURLTextField.m */; };
+		C91CE33815AEB2B300D4C2DB /* Loupe.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C91CE33715AEB2B300D4C2DB /* Loupe.tiff */; };
+		C947582A15A4129B000FA20A /* SRPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C947582915A4129B000FA20A /* SRPreferencesController.m */; };
+		C948916B15AEAD6000C449E1 /* Media.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C948916A15AEAD6000C449E1 /* Media.tiff */; };
+		C949EF5915B52C24001AB919 /* Help.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C949EF5815B52C24001AB919 /* Help.tiff */; };
+		C95B2B8115914341002457DA /* Reply.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C95B2B7F15914341002457DA /* Reply.tiff */; };
+		C95B2B8215914341002457DA /* Resolved.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C95B2B8015914341002457DA /* Resolved.tiff */; };
+		C96DCE0315907714008ECA40 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96DCE0215907714008ECA40 /* Cocoa.framework */; };
+		C96DCE0D15907714008ECA40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE0B15907714008ECA40 /* InfoPlist.strings */; };
+		C96DCE0F15907714008ECA40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C96DCE0E15907714008ECA40 /* main.m */; };
+		C96DCE1315907714008ECA40 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE1115907714008ECA40 /* Credits.rtf */; };
+		C96DCE1615907714008ECA40 /* SRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C96DCE1515907714008ECA40 /* SRAppDelegate.m */; };
+		C96DCE1915907714008ECA40 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE1715907714008ECA40 /* MainMenu.xib */; };
+		C96DCE1C15907714008ECA40 /* Sonar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C96DCE1A15907714008ECA40 /* Sonar.xcdatamodeld */; };
+		C96DCE2515907797008ECA40 /* Sonar.icns in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE2415907797008ECA40 /* Sonar.icns */; };
+		C97478CA15A13AD300B5DC76 /* prefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = C97478C815A13AD300B5DC76 /* prefs.xib */; };
+		C997914D15A4113D00479717 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = C997914C15A4113C00479717 /* Preferences.xib */; };
+		C998649D159C2D6400963466 /* SRWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C998649C159C2D6400963466 /* SRWebViewDelegate.m */; };
+		C9A01A3015AE328D001BC4B1 /* Note.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9A01A2F15AE328D001BC4B1 /* Note.tiff */; };
+		C9B4D75215916D890001B573 /* Sonar.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE26159077A3008ECA40 /* Sonar.entitlements */; };
+		C9B4D7621591721B0001B573 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96DCE0715907714008ECA40 /* Foundation.framework */; };
+		C9C752D615919F5200813B63 /* SRSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C752D415919F5200813B63 /* SRSplitView.m */; };
+		C9C752DE1591BD3300813B63 /* SRNewIssueWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C752DC1591BD3300813B63 /* SRNewIssueWindowController.m */; };
+		C9C752DF1591BD3300813B63 /* SRNewIssueWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C752DD1591BD3300813B63 /* SRNewIssueWindowController.xib */; };
+		C9C752E215922F0200813B63 /* SRBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C752E115922F0200813B63 /* SRBackgroundView.m */; };
+		C9C752F015929B6200813B63 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C752EF15929B6200813B63 /* WebKit.framework */; };
+		C9C752F41592EF6C00813B63 /* NewIssue.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9C752F31592EF6C00813B63 /* NewIssue.tiff */; };
+		C9F9314215B01BF900B9A0C9 /* SRNewProblemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9314115B01BF900B9A0C9 /* SRNewProblemTitle.m */; };
+		C9F9314715B02A9100B9A0C9 /* SRComboBoxFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9314615B02A9100B9A0C9 /* SRComboBoxFormatter.m */; };
+		C9F9314A15B0365700B9A0C9 /* Configuration.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9F9314915B0365700B9A0C9 /* Configuration.tiff */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C90DE4B915A42641005A9CA0 /* DSClickableURLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSClickableURLTextField.h; sourceTree = "<group>"; };
+		C90DE4BA15A42641005A9CA0 /* DSClickableURLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSClickableURLTextField.m; sourceTree = "<group>"; };
+		C91CE33715AEB2B300D4C2DB /* Loupe.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Loupe.tiff; sourceTree = "<group>"; };
+		C947582815A4129B000FA20A /* SRPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPreferencesController.h; sourceTree = "<group>"; };
+		C947582915A4129B000FA20A /* SRPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPreferencesController.m; sourceTree = "<group>"; };
+		C948916A15AEAD6000C449E1 /* Media.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Media.tiff; sourceTree = "<group>"; };
+		C949EF5815B52C24001AB919 /* Help.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Help.tiff; sourceTree = "<group>"; };
+		C95B2B7F15914341002457DA /* Reply.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Reply.tiff; sourceTree = "<group>"; };
+		C95B2B8015914341002457DA /* Resolved.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Resolved.tiff; sourceTree = "<group>"; };
+		C96DCDFE15907714008ECA40 /* Sonar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sonar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96DCE0215907714008ECA40 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C96DCE0515907714008ECA40 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C96DCE0615907714008ECA40 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C96DCE0715907714008ECA40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C96DCE0A15907714008ECA40 /* Sonar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sonar-Info.plist"; sourceTree = "<group>"; };
+		C96DCE0C15907714008ECA40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C96DCE0E15907714008ECA40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C96DCE1015907714008ECA40 /* Sonar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sonar-Prefix.pch"; sourceTree = "<group>"; };
+		C96DCE1215907714008ECA40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C96DCE1415907714008ECA40 /* SRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRAppDelegate.h; sourceTree = "<group>"; };
+		C96DCE1515907714008ECA40 /* SRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRAppDelegate.m; sourceTree = "<group>"; };
+		C96DCE1815907714008ECA40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C96DCE1B15907714008ECA40 /* Sonar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sonar.xcdatamodel; sourceTree = "<group>"; };
+		C96DCE2415907797008ECA40 /* Sonar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Sonar.icns; sourceTree = SOURCE_ROOT; };
+		C96DCE26159077A3008ECA40 /* Sonar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Sonar.entitlements; sourceTree = "<group>"; };
+		C97478C815A13AD300B5DC76 /* prefs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = prefs.xib; sourceTree = "<group>"; };
+		C997914C15A4113C00479717 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		C998649B159C2D6400963466 /* SRWebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebViewDelegate.h; sourceTree = "<group>"; };
+		C998649C159C2D6400963466 /* SRWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebViewDelegate.m; sourceTree = "<group>"; };
+		C9A01A2F15AE328D001BC4B1 /* Note.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Note.tiff; sourceTree = "<group>"; };
+		C9C752D315919F5200813B63 /* SRSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSplitView.h; sourceTree = "<group>"; };
+		C9C752D415919F5200813B63 /* SRSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSplitView.m; sourceTree = "<group>"; };
+		C9C752DB1591BD3300813B63 /* SRNewIssueWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRNewIssueWindowController.h; sourceTree = "<group>"; };
+		C9C752DC1591BD3300813B63 /* SRNewIssueWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNewIssueWindowController.m; sourceTree = "<group>"; };
+		C9C752DD1591BD3300813B63 /* SRNewIssueWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SRNewIssueWindowController.xib; sourceTree = "<group>"; };
+		C9C752E015922F0200813B63 /* SRBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBackgroundView.h; sourceTree = "<group>"; };
+		C9C752E115922F0200813B63 /* SRBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBackgroundView.m; sourceTree = "<group>"; };
+		C9C752EF15929B6200813B63 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C9C752F31592EF6C00813B63 /* NewIssue.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = NewIssue.tiff; sourceTree = "<group>"; };
+		C9F9314015B01BF900B9A0C9 /* SRNewProblemTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRNewProblemTitle.h; sourceTree = "<group>"; };
+		C9F9314115B01BF900B9A0C9 /* SRNewProblemTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNewProblemTitle.m; sourceTree = "<group>"; };
+		C9F9314515B02A9100B9A0C9 /* SRComboBoxFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRComboBoxFormatter.h; sourceTree = "<group>"; };
+		C9F9314615B02A9100B9A0C9 /* SRComboBoxFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRComboBoxFormatter.m; sourceTree = "<group>"; };
+		C9F9314915B0365700B9A0C9 /* Configuration.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Configuration.tiff; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C96DCDFB15907714008ECA40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C752F015929B6200813B63 /* WebKit.framework in Frameworks */,
+				C96DCE0315907714008ECA40 /* Cocoa.framework in Frameworks */,
+				C9B4D7621591721B0001B573 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C90DE4BD15A4264B005A9CA0 /* ClickableURLTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C90DE4B915A42641005A9CA0 /* DSClickableURLTextField.h */,
+				C90DE4BA15A42641005A9CA0 /* DSClickableURLTextField.m */,
+			);
+			name = ClickableURLTextField;
+			sourceTree = "<group>";
+		};
+		C947582415A411FE000FA20A /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				C947582815A4129B000FA20A /* SRPreferencesController.h */,
+				C947582915A4129B000FA20A /* SRPreferencesController.m */,
+				C997914C15A4113C00479717 /* Preferences.xib */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		C96DCDF315907714008ECA40 = {
+			isa = PBXGroup;
+			children = (
+				C96DCE0815907714008ECA40 /* Sonar */,
+				C96DCE0115907714008ECA40 /* Frameworks */,
+				C96DCDFF15907714008ECA40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C96DCDFF15907714008ECA40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C96DCDFE15907714008ECA40 /* Sonar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C96DCE0115907714008ECA40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C96DCE0215907714008ECA40 /* Cocoa.framework */,
+				C9C752EF15929B6200813B63 /* WebKit.framework */,
+				C96DCE0415907714008ECA40 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C96DCE0415907714008ECA40 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C96DCE0515907714008ECA40 /* AppKit.framework */,
+				C96DCE0615907714008ECA40 /* CoreData.framework */,
+				C96DCE0715907714008ECA40 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C96DCE0815907714008ECA40 /* Sonar */ = {
+			isa = PBXGroup;
+			children = (
+				C96DCE1415907714008ECA40 /* SRAppDelegate.h */,
+				C96DCE1515907714008ECA40 /* SRAppDelegate.m */,
+				C96DCE1715907714008ECA40 /* MainMenu.xib */,
+				C97478C815A13AD300B5DC76 /* prefs.xib */,
+				C947582415A411FE000FA20A /* Preferences */,
+				C998649E159C2DA200963466 /* Web View Delegate */,
+				C9C752E315922F0A00813B63 /* Background View */,
+				C9C752EA159278B900813B63 /* New Issue */,
+				C9C752D815919F5A00813B63 /* Split View */,
+				C96DCE26159077A3008ECA40 /* Sonar.entitlements */,
+				C96DCE1A15907714008ECA40 /* Sonar.xcdatamodeld */,
+				C96DCE3315907890008ECA40 /* Icons */,
+				C96DCE0915907714008ECA40 /* Supporting Files */,
+				C90DE4BD15A4264B005A9CA0 /* ClickableURLTextField */,
+			);
+			path = Sonar;
+			sourceTree = "<group>";
+		};
+		C96DCE0915907714008ECA40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C96DCE0A15907714008ECA40 /* Sonar-Info.plist */,
+				C96DCE0B15907714008ECA40 /* InfoPlist.strings */,
+				C96DCE0E15907714008ECA40 /* main.m */,
+				C96DCE1015907714008ECA40 /* Sonar-Prefix.pch */,
+				C96DCE1115907714008ECA40 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C96DCE3315907890008ECA40 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				C949EF5815B52C24001AB919 /* Help.tiff */,
+				C9F9314915B0365700B9A0C9 /* Configuration.tiff */,
+				C91CE33715AEB2B300D4C2DB /* Loupe.tiff */,
+				C948916A15AEAD6000C449E1 /* Media.tiff */,
+				C9C752F31592EF6C00813B63 /* NewIssue.tiff */,
+				C9A01A2F15AE328D001BC4B1 /* Note.tiff */,
+				C95B2B7F15914341002457DA /* Reply.tiff */,
+				C95B2B8015914341002457DA /* Resolved.tiff */,
+				C96DCE2415907797008ECA40 /* Sonar.icns */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		C998649E159C2DA200963466 /* Web View Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C998649B159C2D6400963466 /* SRWebViewDelegate.h */,
+				C998649C159C2D6400963466 /* SRWebViewDelegate.m */,
+			);
+			name = "Web View Delegate";
+			sourceTree = "<group>";
+		};
+		C9C752D815919F5A00813B63 /* Split View */ = {
+			isa = PBXGroup;
+			children = (
+				C9C752D315919F5200813B63 /* SRSplitView.h */,
+				C9C752D415919F5200813B63 /* SRSplitView.m */,
+			);
+			name = "Split View";
+			sourceTree = "<group>";
+		};
+		C9C752E315922F0A00813B63 /* Background View */ = {
+			isa = PBXGroup;
+			children = (
+				C9C752E015922F0200813B63 /* SRBackgroundView.h */,
+				C9C752E115922F0200813B63 /* SRBackgroundView.m */,
+			);
+			name = "Background View";
+			sourceTree = "<group>";
+		};
+		C9C752EA159278B900813B63 /* New Issue */ = {
+			isa = PBXGroup;
+			children = (
+				C9C752DB1591BD3300813B63 /* SRNewIssueWindowController.h */,
+				C9C752DC1591BD3300813B63 /* SRNewIssueWindowController.m */,
+				C9C752DD1591BD3300813B63 /* SRNewIssueWindowController.xib */,
+				C9F9314415B02A5800B9A0C9 /* Problem Title */,
+				C9F9314815B02A9400B9A0C9 /* Combo Box */,
+			);
+			name = "New Issue";
+			sourceTree = "<group>";
+		};
+		C9F9314415B02A5800B9A0C9 /* Problem Title */ = {
+			isa = PBXGroup;
+			children = (
+				C9F9314015B01BF900B9A0C9 /* SRNewProblemTitle.h */,
+				C9F9314115B01BF900B9A0C9 /* SRNewProblemTitle.m */,
+			);
+			name = "Problem Title";
+			sourceTree = "<group>";
+		};
+		C9F9314815B02A9400B9A0C9 /* Combo Box */ = {
+			isa = PBXGroup;
+			children = (
+				C9F9314515B02A9100B9A0C9 /* SRComboBoxFormatter.h */,
+				C9F9314615B02A9100B9A0C9 /* SRComboBoxFormatter.m */,
+			);
+			name = "Combo Box";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C96DCDFD15907714008ECA40 /* Sonar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96DCE1F15907714008ECA40 /* Build configuration list for PBXNativeTarget "Sonar" */;
+			buildPhases = (
+				C96DCDFA15907714008ECA40 /* Sources */,
+				C96DCDFB15907714008ECA40 /* Frameworks */,
+				C96DCDFC15907714008ECA40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sonar;
+			productName = Sonar;
+			productReference = C96DCDFE15907714008ECA40 /* Sonar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C96DCDF515907714008ECA40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SR;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Matt Zanchelli";
+			};
+			buildConfigurationList = C96DCDF815907714008ECA40 /* Build configuration list for PBXProject "Sonar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C96DCDF315907714008ECA40;
+			productRefGroup = C96DCDFF15907714008ECA40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C96DCDFD15907714008ECA40 /* Sonar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C96DCDFC15907714008ECA40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96DCE0D15907714008ECA40 /* InfoPlist.strings in Resources */,
+				C96DCE1315907714008ECA40 /* Credits.rtf in Resources */,
+				C96DCE1915907714008ECA40 /* MainMenu.xib in Resources */,
+				C96DCE2515907797008ECA40 /* Sonar.icns in Resources */,
+				C95B2B8115914341002457DA /* Reply.tiff in Resources */,
+				C95B2B8215914341002457DA /* Resolved.tiff in Resources */,
+				C9B4D75215916D890001B573 /* Sonar.entitlements in Resources */,
+				C9C752DF1591BD3300813B63 /* SRNewIssueWindowController.xib in Resources */,
+				C9C752F41592EF6C00813B63 /* NewIssue.tiff in Resources */,
+				C97478CA15A13AD300B5DC76 /* prefs.xib in Resources */,
+				C997914D15A4113D00479717 /* Preferences.xib in Resources */,
+				C9A01A3015AE328D001BC4B1 /* Note.tiff in Resources */,
+				C948916B15AEAD6000C449E1 /* Media.tiff in Resources */,
+				C91CE33815AEB2B300D4C2DB /* Loupe.tiff in Resources */,
+				C9F9314A15B0365700B9A0C9 /* Configuration.tiff in Resources */,
+				C949EF5915B52C24001AB919 /* Help.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C96DCDFA15907714008ECA40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96DCE0F15907714008ECA40 /* main.m in Sources */,
+				C96DCE1615907714008ECA40 /* SRAppDelegate.m in Sources */,
+				C96DCE1C15907714008ECA40 /* Sonar.xcdatamodeld in Sources */,
+				C9C752D615919F5200813B63 /* SRSplitView.m in Sources */,
+				C9C752DE1591BD3300813B63 /* SRNewIssueWindowController.m in Sources */,
+				C9C752E215922F0200813B63 /* SRBackgroundView.m in Sources */,
+				C998649D159C2D6400963466 /* SRWebViewDelegate.m in Sources */,
+				C947582A15A4129B000FA20A /* SRPreferencesController.m in Sources */,
+				C90DE4BB15A42641005A9CA0 /* DSClickableURLTextField.m in Sources */,
+				C9F9314215B01BF900B9A0C9 /* SRNewProblemTitle.m in Sources */,
+				C9F9314715B02A9100B9A0C9 /* SRComboBoxFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C96DCE0B15907714008ECA40 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96DCE0C15907714008ECA40 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C96DCE1115907714008ECA40 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96DCE1215907714008ECA40 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C96DCE1715907714008ECA40 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96DCE1815907714008ECA40 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C96DCE1D15907714008ECA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C96DCE1E15907714008ECA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C96DCE2015907714008ECA40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sonar/Sonar.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sonar/Sonar-Prefix.pch";
+				INFOPLIST_FILE = "Sonar/Sonar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C96DCE2115907714008ECA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sonar/Sonar.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sonar/Sonar-Prefix.pch";
+				INFOPLIST_FILE = "Sonar/Sonar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C96DCDF815907714008ECA40 /* Build configuration list for PBXProject "Sonar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96DCE1D15907714008ECA40 /* Debug */,
+				C96DCE1E15907714008ECA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96DCE1F15907714008ECA40 /* Build configuration list for PBXNativeTarget "Sonar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96DCE2015907714008ECA40 /* Debug */,
+				C96DCE2115907714008ECA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C96DCE1A15907714008ECA40 /* Sonar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C96DCE1B15907714008ECA40 /* Sonar.xcdatamodel */,
+			);
+			currentVersion = C96DCE1B15907714008ECA40 /* Sonar.xcdatamodel */;
+			path = Sonar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C96DCDF515907714008ECA40 /* Project object */;
+}
