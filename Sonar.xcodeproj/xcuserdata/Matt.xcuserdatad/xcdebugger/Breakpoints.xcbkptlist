@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Sonar/SRPreferencesController.m"
-         timestampString = "364093101.941044"
+         timestampString = "364509639.38557"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "54"
-         endingLineNumber = "54">
+         startingLineNumber = "58"
+         endingLineNumber = "58">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -93,16 +93,29 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Sonar/SRPreferencesController.m"
-         timestampString = "364093101.941044"
+         timestampString = "364509639.38557"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "39"
-         endingLineNumber = "39"
+         startingLineNumber = "42"
+         endingLineNumber = "42"
          landmarkName = "-signIn:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Sonar/SRRadarWebController.m"
+         timestampString = "364509376.784194"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "19"
+         endingLineNumber = "19"
+         landmarkName = "-trySignInWithUsername:andPassword:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

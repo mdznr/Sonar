@@ -58,9 +58,4 @@
 	
 }
 
-- (BOOL)webView:(WebView *)sender
-{
-	return NO;
-}
-
 @end

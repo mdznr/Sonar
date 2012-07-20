@@ -14,6 +14,7 @@
 @end
 
 @implementation SRPreferencesController
+
 @synthesize appleID;
 @synthesize password;
 @synthesize signInButton;
@@ -37,7 +38,10 @@
 - (IBAction)signIn:(id)sender
 {
 	NSLog(@"Siging in via Preferences");
-	NSNotification *trySignIn = [NSNotification notificationWithName:@"Try Signing In" object:[NSArray arrayWithObjects:appleID, password, nil]];
+	
+//	[object trySignInWithUsername:[[NSUserDefaults standardUserDefaults] objectForKey:@"theAccountName"]
+//						 andPassword:[[NSUserDefaults standardUserDefaults] objectForKey:@"theAccountPW"]];
+	
 	// ***
 }
 

@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "DSClickableURLTextField.h"
 
 @interface SRPreferencesController : NSWindowController
 
