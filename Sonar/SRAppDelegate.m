@@ -1,5 +1,5 @@
 //
-//  SRAppDelegate.m
+//  AppDelegate.m
 //  Sonar
 //
 //  Created by Matt on 6/19/12.
@@ -8,12 +8,25 @@
 
 #import "SRAppDelegate.h"
 
-@implementation SRAppDelegate
+#define kState @"state"
+#define kRank @"rank"
+#define kID @"id"
+#define kTitle @"title"
+#define kProduct @"product"
+#define kBuild @"build"
+#define kClassification @"classification"
+#define kDate @"date"
+#define kNotes @"notes"
 
+@implementation SRAppDelegate
 
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
+
+@synthesize splitView = _splitView;
+@synthesize splitViewDelegate = _splitViewDelegate;
+@synthesize tableView = _tableView;
 
 #pragma mark Synthesizing Windows
 @synthesize debugWindow, preferencesController;
@@ -51,7 +64,33 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	// Insert code here to initialize your application
+	// Set up custom Split View Delegate
+	_splitViewDelegate = [[PrioritySplitViewDelegate alloc] init];
+
+	[_splitViewDelegate setPriority:1 forViewAtIndex:0];
+	[_splitViewDelegate setMinimumLength:100.0 forViewAtIndex:0];
+	
+	[_splitViewDelegate setPriority:0 forViewAtIndex:1];
+	[_splitViewDelegate setMinimumLength:200.0 forViewAtIndex:1];
+	
+	[_splitView setDelegate:_splitViewDelegate];
+	
+	// Set up Table View
+	self.bug = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+					@"Open", kState,
+					[NSNumber numberWithInt:3], kRank,
+					[NSNumber numberWithInt:11898176], kID,
+					@"Cannot remove Mail.app Unread Messages Badge", kTitle,
+					@"Mail", kProduct,
+					@"6.0 (1485)", kBuild,
+					@"UI/Usability", kClassification,
+					[NSDate date], kDate,
+					@"", kNotes,
+					nil];
+	self.bugs = [NSMutableArray arrayWithObject:self.bug];
+	[_tableView reloadData];
+	[_tableView selectRow:0 byExtendingSelection:NO];
+	[self updateDetailViews];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.mattzanchelli.Sonar" in the user's Application Support directory.
@@ -168,8 +207,8 @@
 
 - (IBAction)showMainWindow:(id)sender
 {
-	if ( ![_window isVisible] ) {
-        [_window makeKeyAndOrderFront:sender];
+	if ( ![_mainWindow isVisible] ) {
+        [_mainWindow makeKeyAndOrderFront:sender];
 	}
 }
 
@@ -239,6 +278,53 @@
 - (IBAction)addNote:(id)sender
 {
 	
+}
+
+#pragma mark Table View / Detail View
+
+- (void)updateDetailViews {
+	
+	/*
+	[nameView setStringValue:[villain objectForKey:kName]];
+	[lastKnownLocationView setStringValue:[villain objectForKey:kLastKnownLocation]];
+	[lastSeenDateView setDateValue:[villain objectForKey:kLastSeenDate]];
+	if ([swornEnemyView indexOfItemWithObjectValue:[villain objectForKey:kSwornEnemy]]==NSNotFound) {
+		[swornEnemyView addItemWithObjectValue:[villain objectForKey:kSwornEnemy]];
+	}
+	[swornEnemyView selectItemWithObjectValue:[villain objectForKey:kSwornEnemy]];
+	[primaryMotivationView selectCellWithTag:[[[self class] motivations] indexOfObject:[villain objectForKey:kPrimaryMotivation]]];
+	[powersView deselectAllCells];
+	for (NSString *power in [[self class] powers]) {
+		if ([[villain objectForKey:kPowers] containsObject:power]) {
+			[powersView selectCellWithTag:[[[self class] powers] indexOfObject:power]];
+		}
+	}
+	[evilnessView setIntegerValue:[[villain objectForKey:kEvilness] integerValue]];
+	[powerSourceView setTitle:[villain objectForKey:kPowerSource]];
+	[mugshotView setImage:[villain objectForKey:kMugshot]];
+	[notesView setString:[villain objectForKey:kNotes]];
+	 */
+}
+
+#pragma mark NSTableView dataSource methods
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView {
+	return [_bugs count];
+}
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+	return [[_bugs objectAtIndex:rowIndex] objectForKey:[aTableColumn identifier]];
+}
+- (void)tableView:(NSTableView *)aTableView setObjectValue:(id)anObject forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+	[[_bugs objectAtIndex:rowIndex] setObject:anObject forKey:[aTableColumn identifier]];
+	[self updateDetailViews];
+}
+
+#pragma mark NSTableview delegate methods
+- (void)tableViewSelectionDidChange:(NSNotification *)aNotification {
+	if ([_tableView selectedRow]>-1) {
+		self.bug = [self.bugs objectAtIndex:[_tableView selectedRow]];
+		[self updateDetailViews];
+		NSLog(@"current villain properties: %@", _bug);
+	}
 }
 
 #pragma mark Application Termination

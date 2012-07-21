@@ -13,6 +13,7 @@
 @end
 
 @implementation SRNewIssueWindowController
+
 @synthesize submitIcon;
 @synthesize attachIcon;
 @synthesize mediaIcon;
@@ -40,6 +41,21 @@
     [super windowDidLoad];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+}
+
+- (void)awakeFromNib
+{
+	
+}
+
+// Used to update Window Title based on Problem Title
+- (void)controlTextDidChange:(NSNotification *)obj
+{
+	NSString *title = [problemTitle stringValue];
+	if ( title.length )
+		[[self window] setTitle:title];
+	else
+		[[self window] setTitle:@"New Issue"];
 }
 
 - (IBAction)submitIssue:(id)sender
@@ -77,4 +93,5 @@
 {
 	
 }
+
 @end

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C90DE4BB15A42641005A9CA0 /* DSClickableURLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE4BA15A42641005A9CA0 /* DSClickableURLTextField.m */; };
 		C91CE33815AEB2B300D4C2DB /* Loupe.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C91CE33715AEB2B300D4C2DB /* Loupe.tiff */; };
+		C93CFFFC15BA162000A5A057 /* PrioritySplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */; };
 		C947582A15A4129B000FA20A /* SRPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C947582915A4129B000FA20A /* SRPreferencesController.m */; };
 		C948916B15AEAD6000C449E1 /* Media.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C948916A15AEAD6000C449E1 /* Media.tiff */; };
 		C949EF5915B52C24001AB919 /* Help.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C949EF5815B52C24001AB919 /* Help.tiff */; };
@@ -22,13 +22,11 @@
 		C96DCE1915907714008ECA40 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE1715907714008ECA40 /* MainMenu.xib */; };
 		C96DCE1C15907714008ECA40 /* Sonar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C96DCE1A15907714008ECA40 /* Sonar.xcdatamodeld */; };
 		C96DCE2515907797008ECA40 /* Sonar.icns in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE2415907797008ECA40 /* Sonar.icns */; };
-		C97478CA15A13AD300B5DC76 /* prefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = C97478C815A13AD300B5DC76 /* prefs.xib */; };
 		C997914D15A4113D00479717 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = C997914C15A4113C00479717 /* Preferences.xib */; };
 		C998649D159C2D6400963466 /* SRWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C998649C159C2D6400963466 /* SRWebViewDelegate.m */; };
 		C9A01A3015AE328D001BC4B1 /* Note.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9A01A2F15AE328D001BC4B1 /* Note.tiff */; };
 		C9B4D75215916D890001B573 /* Sonar.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE26159077A3008ECA40 /* Sonar.entitlements */; };
 		C9B4D7621591721B0001B573 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96DCE0715907714008ECA40 /* Foundation.framework */; };
-		C9C752D615919F5200813B63 /* SRSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C752D415919F5200813B63 /* SRSplitView.m */; };
 		C9C752DE1591BD3300813B63 /* SRNewIssueWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C752DC1591BD3300813B63 /* SRNewIssueWindowController.m */; };
 		C9C752DF1591BD3300813B63 /* SRNewIssueWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C752DD1591BD3300813B63 /* SRNewIssueWindowController.xib */; };
 		C9C752E215922F0200813B63 /* SRBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C752E115922F0200813B63 /* SRBackgroundView.m */; };
@@ -37,12 +35,15 @@
 		C9F9314215B01BF900B9A0C9 /* SRNewProblemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9314115B01BF900B9A0C9 /* SRNewProblemTitle.m */; };
 		C9F9314715B02A9100B9A0C9 /* SRComboBoxFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9314615B02A9100B9A0C9 /* SRComboBoxFormatter.m */; };
 		C9F9314A15B0365700B9A0C9 /* Configuration.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9F9314915B0365700B9A0C9 /* Configuration.tiff */; };
+		C9F9F6C915BA91F700CD95EB /* SRStateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9F6C815BA91F700CD95EB /* SRStateFormatter.m */; };
+		C9F9F6CD15BA96F800CD95EB /* unread@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F9F6CB15BA96F800CD95EB /* unread@2x.png */; };
+		C9F9F6CE15BA96F800CD95EB /* unread.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F9F6CC15BA96F800CD95EB /* unread.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C90DE4B915A42641005A9CA0 /* DSClickableURLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSClickableURLTextField.h; sourceTree = "<group>"; };
-		C90DE4BA15A42641005A9CA0 /* DSClickableURLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSClickableURLTextField.m; sourceTree = "<group>"; };
 		C91CE33715AEB2B300D4C2DB /* Loupe.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Loupe.tiff; sourceTree = "<group>"; };
+		C93CFFFA15BA162000A5A057 /* PrioritySplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrioritySplitViewDelegate.h; sourceTree = "<group>"; };
+		C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrioritySplitViewDelegate.m; sourceTree = "<group>"; };
 		C947582815A4129B000FA20A /* SRPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPreferencesController.h; sourceTree = "<group>"; };
 		C947582915A4129B000FA20A /* SRPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPreferencesController.m; sourceTree = "<group>"; };
 		C948916A15AEAD6000C449E1 /* Media.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Media.tiff; sourceTree = "<group>"; };
@@ -65,13 +66,10 @@
 		C96DCE1B15907714008ECA40 /* Sonar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sonar.xcdatamodel; sourceTree = "<group>"; };
 		C96DCE2415907797008ECA40 /* Sonar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Sonar.icns; sourceTree = SOURCE_ROOT; };
 		C96DCE26159077A3008ECA40 /* Sonar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Sonar.entitlements; sourceTree = "<group>"; };
-		C97478C815A13AD300B5DC76 /* prefs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = prefs.xib; sourceTree = "<group>"; };
 		C997914C15A4113C00479717 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		C998649B159C2D6400963466 /* SRWebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebViewDelegate.h; sourceTree = "<group>"; };
 		C998649C159C2D6400963466 /* SRWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebViewDelegate.m; sourceTree = "<group>"; };
 		C9A01A2F15AE328D001BC4B1 /* Note.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Note.tiff; sourceTree = "<group>"; };
-		C9C752D315919F5200813B63 /* SRSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSplitView.h; sourceTree = "<group>"; };
-		C9C752D415919F5200813B63 /* SRSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSplitView.m; sourceTree = "<group>"; };
 		C9C752DB1591BD3300813B63 /* SRNewIssueWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRNewIssueWindowController.h; sourceTree = "<group>"; };
 		C9C752DC1591BD3300813B63 /* SRNewIssueWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNewIssueWindowController.m; sourceTree = "<group>"; };
 		C9C752DD1591BD3300813B63 /* SRNewIssueWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SRNewIssueWindowController.xib; sourceTree = "<group>"; };
@@ -84,6 +82,10 @@
 		C9F9314515B02A9100B9A0C9 /* SRComboBoxFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRComboBoxFormatter.h; sourceTree = "<group>"; };
 		C9F9314615B02A9100B9A0C9 /* SRComboBoxFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRComboBoxFormatter.m; sourceTree = "<group>"; };
 		C9F9314915B0365700B9A0C9 /* Configuration.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Configuration.tiff; sourceTree = "<group>"; };
+		C9F9F6C715BA91F700CD95EB /* SRStateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRStateFormatter.h; sourceTree = "<group>"; };
+		C9F9F6C815BA91F700CD95EB /* SRStateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRStateFormatter.m; sourceTree = "<group>"; };
+		C9F9F6CB15BA96F800CD95EB /* unread@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unread@2x.png"; sourceTree = "<group>"; };
+		C9F9F6CC15BA96F800CD95EB /* unread.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unread.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,15 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C90DE4BD15A4264B005A9CA0 /* ClickableURLTextField */ = {
-			isa = PBXGroup;
-			children = (
-				C90DE4B915A42641005A9CA0 /* DSClickableURLTextField.h */,
-				C90DE4BA15A42641005A9CA0 /* DSClickableURLTextField.m */,
-			);
-			name = ClickableURLTextField;
-			sourceTree = "<group>";
-		};
 		C947582415A411FE000FA20A /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,17 +155,16 @@
 				C96DCE1415907714008ECA40 /* SRAppDelegate.h */,
 				C96DCE1515907714008ECA40 /* SRAppDelegate.m */,
 				C96DCE1715907714008ECA40 /* MainMenu.xib */,
-				C97478C815A13AD300B5DC76 /* prefs.xib */,
 				C947582415A411FE000FA20A /* Preferences */,
 				C998649E159C2DA200963466 /* Web View Delegate */,
 				C9C752E315922F0A00813B63 /* Background View */,
 				C9C752EA159278B900813B63 /* New Issue */,
 				C9C752D815919F5A00813B63 /* Split View */,
+				C9F9F6CA15BA91FB00CD95EB /* Bug State Formatter */,
 				C96DCE26159077A3008ECA40 /* Sonar.entitlements */,
 				C96DCE1A15907714008ECA40 /* Sonar.xcdatamodeld */,
 				C96DCE3315907890008ECA40 /* Icons */,
 				C96DCE0915907714008ECA40 /* Supporting Files */,
-				C90DE4BD15A4264B005A9CA0 /* ClickableURLTextField */,
 			);
 			path = Sonar;
 			sourceTree = "<group>";
@@ -192,14 +184,8 @@
 		C96DCE3315907890008ECA40 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				C949EF5815B52C24001AB919 /* Help.tiff */,
-				C9F9314915B0365700B9A0C9 /* Configuration.tiff */,
-				C91CE33715AEB2B300D4C2DB /* Loupe.tiff */,
-				C948916A15AEAD6000C449E1 /* Media.tiff */,
-				C9C752F31592EF6C00813B63 /* NewIssue.tiff */,
-				C9A01A2F15AE328D001BC4B1 /* Note.tiff */,
-				C95B2B7F15914341002457DA /* Reply.tiff */,
-				C95B2B8015914341002457DA /* Resolved.tiff */,
+				C9F9F6CF15BA96FC00CD95EB /* State Icons */,
+				C9F9F6D015BA970600CD95EB /* Toolbar Icons */,
 				C96DCE2415907797008ECA40 /* Sonar.icns */,
 			);
 			name = Icons;
@@ -217,8 +203,8 @@
 		C9C752D815919F5A00813B63 /* Split View */ = {
 			isa = PBXGroup;
 			children = (
-				C9C752D315919F5200813B63 /* SRSplitView.h */,
-				C9C752D415919F5200813B63 /* SRSplitView.m */,
+				C93CFFFA15BA162000A5A057 /* PrioritySplitViewDelegate.h */,
+				C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */,
 			);
 			name = "Split View";
 			sourceTree = "<group>";
@@ -260,6 +246,39 @@
 				C9F9314615B02A9100B9A0C9 /* SRComboBoxFormatter.m */,
 			);
 			name = "Combo Box";
+			sourceTree = "<group>";
+		};
+		C9F9F6CA15BA91FB00CD95EB /* Bug State Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				C9F9F6C715BA91F700CD95EB /* SRStateFormatter.h */,
+				C9F9F6C815BA91F700CD95EB /* SRStateFormatter.m */,
+			);
+			name = "Bug State Formatter";
+			sourceTree = "<group>";
+		};
+		C9F9F6CF15BA96FC00CD95EB /* State Icons */ = {
+			isa = PBXGroup;
+			children = (
+				C9F9F6CB15BA96F800CD95EB /* unread@2x.png */,
+				C9F9F6CC15BA96F800CD95EB /* unread.png */,
+			);
+			name = "State Icons";
+			sourceTree = "<group>";
+		};
+		C9F9F6D015BA970600CD95EB /* Toolbar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				C949EF5815B52C24001AB919 /* Help.tiff */,
+				C9F9314915B0365700B9A0C9 /* Configuration.tiff */,
+				C91CE33715AEB2B300D4C2DB /* Loupe.tiff */,
+				C948916A15AEAD6000C449E1 /* Media.tiff */,
+				C9C752F31592EF6C00813B63 /* NewIssue.tiff */,
+				C9A01A2F15AE328D001BC4B1 /* Note.tiff */,
+				C95B2B7F15914341002457DA /* Reply.tiff */,
+				C95B2B8015914341002457DA /* Resolved.tiff */,
+			);
+			name = "Toolbar Icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,13 +342,14 @@
 				C9B4D75215916D890001B573 /* Sonar.entitlements in Resources */,
 				C9C752DF1591BD3300813B63 /* SRNewIssueWindowController.xib in Resources */,
 				C9C752F41592EF6C00813B63 /* NewIssue.tiff in Resources */,
-				C97478CA15A13AD300B5DC76 /* prefs.xib in Resources */,
 				C997914D15A4113D00479717 /* Preferences.xib in Resources */,
 				C9A01A3015AE328D001BC4B1 /* Note.tiff in Resources */,
 				C948916B15AEAD6000C449E1 /* Media.tiff in Resources */,
 				C91CE33815AEB2B300D4C2DB /* Loupe.tiff in Resources */,
 				C9F9314A15B0365700B9A0C9 /* Configuration.tiff in Resources */,
 				C949EF5915B52C24001AB919 /* Help.tiff in Resources */,
+				C9F9F6CD15BA96F800CD95EB /* unread@2x.png in Resources */,
+				C9F9F6CE15BA96F800CD95EB /* unread.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,14 +363,14 @@
 				C96DCE0F15907714008ECA40 /* main.m in Sources */,
 				C96DCE1615907714008ECA40 /* SRAppDelegate.m in Sources */,
 				C96DCE1C15907714008ECA40 /* Sonar.xcdatamodeld in Sources */,
-				C9C752D615919F5200813B63 /* SRSplitView.m in Sources */,
 				C9C752DE1591BD3300813B63 /* SRNewIssueWindowController.m in Sources */,
 				C9C752E215922F0200813B63 /* SRBackgroundView.m in Sources */,
 				C998649D159C2D6400963466 /* SRWebViewDelegate.m in Sources */,
 				C947582A15A4129B000FA20A /* SRPreferencesController.m in Sources */,
-				C90DE4BB15A42641005A9CA0 /* DSClickableURLTextField.m in Sources */,
 				C9F9314215B01BF900B9A0C9 /* SRNewProblemTitle.m in Sources */,
 				C9F9314715B02A9100B9A0C9 /* SRComboBoxFormatter.m in Sources */,
+				C93CFFFC15BA162000A5A057 /* PrioritySplitViewDelegate.m in Sources */,
+				C9F9F6C915BA91F700CD95EB /* SRStateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

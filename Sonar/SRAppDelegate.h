@@ -10,13 +10,20 @@
 #import <WebKit/WebView.h>
 
 #import "SRPreferencesController.h"
+#import "PrioritySplitViewDelegate.h"
 
 @interface SRAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSWindow *mainWindow;
 @property (assign) IBOutlet NSPanel *debugWindow;
 @property (retain) SRPreferencesController *preferencesController;
+
+@property (retain) IBOutlet NSSplitView *splitView;
+@property (retain) PrioritySplitViewDelegate *splitViewDelegate;
+@property (strong) IBOutlet NSTableView *tableView;
+
+@property (retain) NSMutableDictionary *bug;
+@property (retain) NSMutableArray *bugs;
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
