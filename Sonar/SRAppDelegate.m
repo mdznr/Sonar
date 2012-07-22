@@ -17,6 +17,8 @@
 #define kClassification @"classification"
 #define kDate @"date"
 #define kNotes @"notes"
+#define kDetails @"details"
+#define kAttachments @"attachments"
 
 @implementation SRAppDelegate
 
@@ -27,9 +29,10 @@
 @synthesize splitView = _splitView;
 @synthesize splitViewDelegate = _splitViewDelegate;
 @synthesize tableView = _tableView;
+@synthesize textView = _textView;
 
 #pragma mark Synthesizing Windows
-@synthesize debugWindow, preferencesController;
+@synthesize debugWindow, preferencesWindow;
 
 - (NSWindowController*)newIssue
 {
@@ -37,8 +40,12 @@
 }
 
 @synthesize webView = _webView;
+@synthesize webViewDelegate = _webViewDelegate;
+
 @synthesize appleID = _appleID;
 @synthesize password = _password;
+@synthesize signInButton = _signInButton;
+@synthesize syncRate = _syncRate;
 
 - (SRAppDelegate*)init
 {
@@ -68,10 +75,10 @@
 	_splitViewDelegate = [[PrioritySplitViewDelegate alloc] init];
 
 	[_splitViewDelegate setPriority:1 forViewAtIndex:0];
-	[_splitViewDelegate setMinimumLength:100.0 forViewAtIndex:0];
+	[_splitViewDelegate setMinimumLength:92.0 forViewAtIndex:0];
 	
 	[_splitViewDelegate setPriority:0 forViewAtIndex:1];
-	[_splitViewDelegate setMinimumLength:200.0 forViewAtIndex:1];
+	[_splitViewDelegate setMinimumLength:198.0 forViewAtIndex:1];
 	
 	[_splitView setDelegate:_splitViewDelegate];
 	
@@ -86,10 +93,30 @@
 					@"UI/Usability", kClassification,
 					[NSDate date], kDate,
 					@"", kNotes,
+					@"", kDetails,
+					[NSMutableArray arrayWithObjects: nil], kAttachments,
 					nil];
 	self.bugs = [NSMutableArray arrayWithObject:self.bug];
+	
+	self.bug = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+				@"Closed", kState,
+				[NSNumber numberWithInt:1], kRank,
+				[NSNumber numberWithInt:10934277], kID,
+				@"This is a title", kTitle,
+				@"Mac OS X", kProduct,
+				@"10.8 (12A269)", kBuild,
+				@"UI/Usability", kClassification,
+				[NSDate date], kDate,
+				@"", kNotes,
+				@"", kDetails,
+				[NSMutableArray arrayWithObjects: nil], kAttachments,
+				nil];
+	
+	[self.bugs addObject:self.bug];
+	[self.bugs addObjectsFromArray:[NSArray arrayWithObjects:self.bug, self.bug, self.bug, self.bug, nil]];
+	
 	[_tableView reloadData];
-	[_tableView selectRow:0 byExtendingSelection:NO];
+	[_tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:0] byExtendingSelection:NO];
 	[self updateDetailViews];
 }
 
@@ -196,32 +223,30 @@
 
 #pragma mark Show/Hide Windows
 
--(IBAction)showPreferences:(id)sender
-{
-	if( !self.preferencesController ) {
-		self.preferencesController = [[SRPreferencesController alloc] initWithWindowNibName:@"Preferences"];
-	}
-	
-	[self.preferencesController showWindow:self];
-}
-
 - (IBAction)showMainWindow:(id)sender
 {
-	if ( ![_mainWindow isVisible] ) {
-        [_mainWindow makeKeyAndOrderFront:sender];
-	}
+	[_mainWindow makeKeyAndOrderFront:sender];
 }
 
 - (IBAction)showDebugWindow:(id)sender
 {
-	if ( [debugWindow isVisible] ) {
+	if ( [debugWindow isKeyWindow] ) {
 		[debugWindow performClose:sender];
 	}
-	else if ( [debugWindow isKeyWindow] ) {
-		[debugWindow makeKeyWindow];
+	[debugWindow makeKeyAndOrderFront:sender];
+}
+
+#pragma mark Preferences
+
+- (void)controlTextDidChange:(NSNotification *)obj
+{
+	if ( [_appleID stringValue].length && [_password stringValue].length)
+	{
+		[_signInButton setEnabled:YES];
 	}
-	else {
-		[debugWindow makeKeyAndOrderFront:sender];
+	else
+	{
+		[_signInButton setEnabled:NO];
 	}
 }
 
@@ -239,7 +264,7 @@
 	
 	[[NSUserDefaults standardUserDefaults] synchronize]; // this method is optional
 	
-	[_webView setMainFrameURL:@"https://bugreport.apple.com/cgi-bin/WebObjects/RadarWeb.woa/wa/signIn"];
+	[_webViewDelegate webView:_webView didSignInForUsername:[_password stringValue] andPassword:[_appleID stringValue]];
 }
 
 #pragma mark Toolbar Actions
@@ -304,6 +329,8 @@
 	[mugshotView setImage:[villain objectForKey:kMugshot]];
 	[notesView setString:[villain objectForKey:kNotes]];
 	 */
+	
+	[_textView setString:[_bug objectForKey:kTitle]];
 }
 
 #pragma mark NSTableView dataSource methods
@@ -320,7 +347,8 @@
 
 #pragma mark NSTableview delegate methods
 - (void)tableViewSelectionDidChange:(NSNotification *)aNotification {
-	if ([_tableView selectedRow]>-1) {
+	if ( [_tableView selectedRow] > -1 )
+	{
 		self.bug = [self.bugs objectAtIndex:[_tableView selectedRow]];
 		[self updateDetailViews];
 		NSLog(@"current villain properties: %@", _bug);

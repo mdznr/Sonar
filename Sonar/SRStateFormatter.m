@@ -53,37 +53,38 @@
 
 - (NSAttributedString *)attributedStringForObjectValue:(id)obj withDefaultAttributes:(NSDictionary *)attrs
 {
+	NSAttributedString* as;
+	NSTextAttachment* ta = [[NSTextAttachment alloc] init];
+	NSTextAttachmentCell* tac = [[NSTextAttachmentCell alloc] init];
+	
 	if ( [obj isEqualToString:@"Open"] )
 	{
-		NSAttributedString* as;
-		NSTextAttachment* ta = [[NSTextAttachment alloc] init];
-		NSTextAttachmentCell* tac = [[NSTextAttachmentCell alloc] init];
-		[tac setImage:[NSImage imageNamed:@"unread"]];
-		[ta setAttachmentCell: tac];
-		as = [NSAttributedString attributedStringWithAttachment: ta];
-		return as;
+		[tac setImage:[NSImage imageNamed:@"open"]];
 	}
 	else if ( [obj isEqualToString:@"Insufficient Information"] )
 	{
-		return [[NSAttributedString alloc] initWithString:@"ii"];
+		[tac setImage:[NSImage imageNamed:@"insufficientInformation"]];
 	}
 	else if ( [obj isEqualToString:@"Duplicate"] )
 	{
-		return [[NSAttributedString alloc] initWithString:@"d"];
+		[tac setImage:[NSImage imageNamed:@"duplicate"]];
 	}
 	else if ( [obj isEqualToString:@"3rd Party to Resolve"] )
 	{
-		return [[NSAttributedString alloc] initWithString:@"3"];
+		[tac setImage:[NSImage imageNamed:@"3rdParty"]];
 	}
 	else if ( [obj isEqualToString:@"Behaves Correctly"] )
 	{
-		return [[NSAttributedString alloc] initWithString:@"bc"];
+		[tac setImage:[NSImage imageNamed:@"behavesCorrectly"]];
 	}
 	else if ( [obj isEqualToString:@"Closed"] )
 	{
-		return [[NSAttributedString alloc] initWithString:@"c"];
+		[tac setImage:[NSImage imageNamed:@"closed"]];
 	}
-   return [[NSAttributedString alloc] initWithString:@"boo"];
+	
+	[ta setAttachmentCell: tac];
+	as = [NSAttributedString attributedStringWithAttachment: ta];
+	return as;
 }
 
 @end

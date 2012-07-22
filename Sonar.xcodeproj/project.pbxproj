@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C91CE33815AEB2B300D4C2DB /* Loupe.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C91CE33715AEB2B300D4C2DB /* Loupe.tiff */; };
 		C93CFFFC15BA162000A5A057 /* PrioritySplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */; };
-		C947582A15A4129B000FA20A /* SRPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C947582915A4129B000FA20A /* SRPreferencesController.m */; };
 		C948916B15AEAD6000C449E1 /* Media.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C948916A15AEAD6000C449E1 /* Media.tiff */; };
 		C949EF5915B52C24001AB919 /* Help.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C949EF5815B52C24001AB919 /* Help.tiff */; };
 		C95B2B8115914341002457DA /* Reply.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C95B2B7F15914341002457DA /* Reply.tiff */; };
@@ -22,7 +21,6 @@
 		C96DCE1915907714008ECA40 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE1715907714008ECA40 /* MainMenu.xib */; };
 		C96DCE1C15907714008ECA40 /* Sonar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C96DCE1A15907714008ECA40 /* Sonar.xcdatamodeld */; };
 		C96DCE2515907797008ECA40 /* Sonar.icns in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE2415907797008ECA40 /* Sonar.icns */; };
-		C997914D15A4113D00479717 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = C997914C15A4113C00479717 /* Preferences.xib */; };
 		C998649D159C2D6400963466 /* SRWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C998649C159C2D6400963466 /* SRWebViewDelegate.m */; };
 		C9A01A3015AE328D001BC4B1 /* Note.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9A01A2F15AE328D001BC4B1 /* Note.tiff */; };
 		C9B4D75215916D890001B573 /* Sonar.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE26159077A3008ECA40 /* Sonar.entitlements */; };
@@ -36,16 +34,14 @@
 		C9F9314715B02A9100B9A0C9 /* SRComboBoxFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9314615B02A9100B9A0C9 /* SRComboBoxFormatter.m */; };
 		C9F9314A15B0365700B9A0C9 /* Configuration.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9F9314915B0365700B9A0C9 /* Configuration.tiff */; };
 		C9F9F6C915BA91F700CD95EB /* SRStateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9F6C815BA91F700CD95EB /* SRStateFormatter.m */; };
-		C9F9F6CD15BA96F800CD95EB /* unread@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F9F6CB15BA96F800CD95EB /* unread@2x.png */; };
-		C9F9F6CE15BA96F800CD95EB /* unread.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F9F6CC15BA96F800CD95EB /* unread.png */; };
+		C9F9F6CE15BA96F800CD95EB /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F9F6CC15BA96F800CD95EB /* open.png */; };
+		C9F9F6D215BB63CD00CD95EB /* open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F9F6D115BB63CD00CD95EB /* open@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C91CE33715AEB2B300D4C2DB /* Loupe.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Loupe.tiff; sourceTree = "<group>"; };
 		C93CFFFA15BA162000A5A057 /* PrioritySplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrioritySplitViewDelegate.h; sourceTree = "<group>"; };
 		C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrioritySplitViewDelegate.m; sourceTree = "<group>"; };
-		C947582815A4129B000FA20A /* SRPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPreferencesController.h; sourceTree = "<group>"; };
-		C947582915A4129B000FA20A /* SRPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPreferencesController.m; sourceTree = "<group>"; };
 		C948916A15AEAD6000C449E1 /* Media.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Media.tiff; sourceTree = "<group>"; };
 		C949EF5815B52C24001AB919 /* Help.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Help.tiff; sourceTree = "<group>"; };
 		C95B2B7F15914341002457DA /* Reply.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Reply.tiff; sourceTree = "<group>"; };
@@ -66,7 +62,6 @@
 		C96DCE1B15907714008ECA40 /* Sonar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sonar.xcdatamodel; sourceTree = "<group>"; };
 		C96DCE2415907797008ECA40 /* Sonar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Sonar.icns; sourceTree = SOURCE_ROOT; };
 		C96DCE26159077A3008ECA40 /* Sonar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Sonar.entitlements; sourceTree = "<group>"; };
-		C997914C15A4113C00479717 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		C998649B159C2D6400963466 /* SRWebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebViewDelegate.h; sourceTree = "<group>"; };
 		C998649C159C2D6400963466 /* SRWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebViewDelegate.m; sourceTree = "<group>"; };
 		C9A01A2F15AE328D001BC4B1 /* Note.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Note.tiff; sourceTree = "<group>"; };
@@ -84,8 +79,8 @@
 		C9F9314915B0365700B9A0C9 /* Configuration.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Configuration.tiff; sourceTree = "<group>"; };
 		C9F9F6C715BA91F700CD95EB /* SRStateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRStateFormatter.h; sourceTree = "<group>"; };
 		C9F9F6C815BA91F700CD95EB /* SRStateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRStateFormatter.m; sourceTree = "<group>"; };
-		C9F9F6CB15BA96F800CD95EB /* unread@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unread@2x.png"; sourceTree = "<group>"; };
-		C9F9F6CC15BA96F800CD95EB /* unread.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unread.png; sourceTree = "<group>"; };
+		C9F9F6CC15BA96F800CD95EB /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
+		C9F9F6D115BB63CD00CD95EB /* open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,16 +97,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C947582415A411FE000FA20A /* Preferences */ = {
-			isa = PBXGroup;
-			children = (
-				C947582815A4129B000FA20A /* SRPreferencesController.h */,
-				C947582915A4129B000FA20A /* SRPreferencesController.m */,
-				C997914C15A4113C00479717 /* Preferences.xib */,
-			);
-			name = Preferences;
-			sourceTree = "<group>";
-		};
 		C96DCDF315907714008ECA40 = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +140,6 @@
 				C96DCE1415907714008ECA40 /* SRAppDelegate.h */,
 				C96DCE1515907714008ECA40 /* SRAppDelegate.m */,
 				C96DCE1715907714008ECA40 /* MainMenu.xib */,
-				C947582415A411FE000FA20A /* Preferences */,
 				C998649E159C2DA200963466 /* Web View Delegate */,
 				C9C752E315922F0A00813B63 /* Background View */,
 				C9C752EA159278B900813B63 /* New Issue */,
@@ -260,8 +244,8 @@
 		C9F9F6CF15BA96FC00CD95EB /* State Icons */ = {
 			isa = PBXGroup;
 			children = (
-				C9F9F6CB15BA96F800CD95EB /* unread@2x.png */,
-				C9F9F6CC15BA96F800CD95EB /* unread.png */,
+				C9F9F6D115BB63CD00CD95EB /* open@2x.png */,
+				C9F9F6CC15BA96F800CD95EB /* open.png */,
 			);
 			name = "State Icons";
 			sourceTree = "<group>";
@@ -342,14 +326,13 @@
 				C9B4D75215916D890001B573 /* Sonar.entitlements in Resources */,
 				C9C752DF1591BD3300813B63 /* SRNewIssueWindowController.xib in Resources */,
 				C9C752F41592EF6C00813B63 /* NewIssue.tiff in Resources */,
-				C997914D15A4113D00479717 /* Preferences.xib in Resources */,
 				C9A01A3015AE328D001BC4B1 /* Note.tiff in Resources */,
 				C948916B15AEAD6000C449E1 /* Media.tiff in Resources */,
 				C91CE33815AEB2B300D4C2DB /* Loupe.tiff in Resources */,
 				C9F9314A15B0365700B9A0C9 /* Configuration.tiff in Resources */,
 				C949EF5915B52C24001AB919 /* Help.tiff in Resources */,
-				C9F9F6CD15BA96F800CD95EB /* unread@2x.png in Resources */,
-				C9F9F6CE15BA96F800CD95EB /* unread.png in Resources */,
+				C9F9F6CE15BA96F800CD95EB /* open.png in Resources */,
+				C9F9F6D215BB63CD00CD95EB /* open@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +349,6 @@
 				C9C752DE1591BD3300813B63 /* SRNewIssueWindowController.m in Sources */,
 				C9C752E215922F0200813B63 /* SRBackgroundView.m in Sources */,
 				C998649D159C2D6400963466 /* SRWebViewDelegate.m in Sources */,
-				C947582A15A4129B000FA20A /* SRPreferencesController.m in Sources */,
 				C9F9314215B01BF900B9A0C9 /* SRNewProblemTitle.m in Sources */,
 				C9F9314715B02A9100B9A0C9 /* SRComboBoxFormatter.m in Sources */,
 				C93CFFFC15BA162000A5A057 /* PrioritySplitViewDelegate.m in Sources */,

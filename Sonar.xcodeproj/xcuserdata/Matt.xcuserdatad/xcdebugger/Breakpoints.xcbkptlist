@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Sonar/SRWebViewDelegate.m"
-         timestampString = "362784267.371312"
+         timestampString = "364619218.455355"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "56"
-         endingLineNumber = "56"
+         startingLineNumber = "58"
+         endingLineNumber = "58"
          landmarkName = "-webView:resource:didFailLoadingWithError:fromDataSource:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -142,6 +142,32 @@
          startingLineNumber = "57"
          endingLineNumber = "57"
          landmarkName = "-controlTextDidChange:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Sonar/SRAppDelegate.m"
+         timestampString = "364635578.024004"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "233"
+         endingLineNumber = "233"
+         landmarkName = "-showDebugWindow:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Sonar/SRWebViewDelegate.m"
+         timestampString = "364619545.774538"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
+         landmarkName = "-webView:didSignInForUsername:andPassword:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

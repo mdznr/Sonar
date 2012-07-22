@@ -14,5 +14,6 @@
 
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame;
 - (void)webView:(WebView *)sender resource:(id)identifier didFailLoadingWithError:(NSError *)error fromDataSource:(WebDataSource *)dataSource;
+- (BOOL)webView:(WebView *)sender didSignInForUsername:(NSString *)username andPassword:(NSString *)password;
 
 @end

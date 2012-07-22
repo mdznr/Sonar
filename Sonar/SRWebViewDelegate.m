@@ -15,7 +15,8 @@
 	NSLog(@"Finished Loading: %@\n", [sender mainFrameURL]);
 	
 	// OpenRadar
-	if ( [[sender mainFrameURL] hasPrefix:@"http://openradar.appspot.com"] ) {
+	if ( [[sender mainFrameURL] hasPrefix:@"http://openradar.appspot.com"] )
+	{
 		NSLog(@"Problem Title: %@",[sender stringByEvaluatingJavaScriptFromString:@"document.getElementsByTagName('h3')[0].innerHTML"]);
 		NSLog(@"Problem ID: %@", [sender stringByEvaluatingJavaScriptFromString:@"document.getElementsByTagName('table')[0].getElementsByTagName('tr')[1].getElementsByTagName('a')[1].innerHTML"]);
 		NSLog(@"Originator: %@", [sender stringByEvaluatingJavaScriptFromString:@"document.getElementsByTagName('table')[0].getElementsByTagName('tr')[0].getElementsByTagName('td')[1].innerHTML"]);
@@ -43,12 +44,13 @@
 		[sender stringByEvaluatingJavaScriptFromString:@"document.getElementsByName('appleConnectForm')[0].submit()"];
 	}
 	
-	else if ( [[sender mainFrameURL] hasPrefix:@"https://bugreport.apple.com/cgi-bin/WebObjects/RadarWeb.woa/63/wo/zlj8oNIfnyjXU1uEYJBadM/4.17"])
+	else if ( [[sender mainFrameURL] hasPrefix:@"https://bugreport.apple.com/cgi-bin/WebObjects/RadarWeb.woa/"])
 	{
 		NSLog(@"Finished!");
 	}
 	
-	else {
+	else
+	{
 		
 	}
 }
@@ -56,6 +58,13 @@
 - (void)webView:(WebView *)sender resource:(id)identifier didFailLoadingWithError:(NSError *)error fromDataSource:(WebDataSource *)dataSource
 {
 	
+}
+
+- (BOOL)webView:(WebView *)sender didSignInForUsername:(NSString *)username andPassword:(NSString *)password
+{
+	[sender setMainFrameURL:@"https://bugreport.apple.com/cgi-bin/WebObjects/RadarWeb.woa/wa/signIn"];
+	
+	return NO;
 }
 
 @end
