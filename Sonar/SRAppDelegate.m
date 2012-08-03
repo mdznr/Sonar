@@ -15,6 +15,7 @@
 #define kProduct @"product"
 #define kBuild @"build"
 #define kClassification @"classification"
+#define kReproducibility @"reproducibility"
 #define kDate @"date"
 #define kNotes @"notes"
 #define kDetails @"details"
@@ -22,30 +23,13 @@
 
 @implementation SRAppDelegate
 
+@synthesize stampView = _stampView;
+@synthesize detailView = _detailView;
+@synthesize noteText = _noteText;
+
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
-
-@synthesize splitView = _splitView;
-@synthesize splitViewDelegate = _splitViewDelegate;
-@synthesize tableView = _tableView;
-@synthesize textView = _textView;
-
-#pragma mark Synthesizing Windows
-@synthesize debugWindow, preferencesWindow;
-
-- (NSWindowController*)newIssue
-{
-	return _newIssue;
-}
-
-@synthesize webView = _webView;
-@synthesize webViewDelegate = _webViewDelegate;
-
-@synthesize appleID = _appleID;
-@synthesize password = _password;
-@synthesize signInButton = _signInButton;
-@synthesize syncRate = _syncRate;
 
 - (SRAppDelegate*)init
 {
@@ -71,32 +55,48 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+	
+	[_detailBody setVerticallyResizable:YES];
+	
 	// Set up custom Split View Delegate
 	_splitViewDelegate = [[PrioritySplitViewDelegate alloc] init];
 
 	[_splitViewDelegate setPriority:1 forViewAtIndex:0];
-	[_splitViewDelegate setMinimumLength:92.0 forViewAtIndex:0];
+	[_splitViewDelegate setMinimumLength:96.0 forViewAtIndex:0];
 	
 	[_splitViewDelegate setPriority:0 forViewAtIndex:1];
-	[_splitViewDelegate setMinimumLength:198.0 forViewAtIndex:1];
+	[_splitViewDelegate setMinimumLength:194.0 forViewAtIndex:1];
 	
 	[_splitView setDelegate:_splitViewDelegate];
 	
 	// Set up Table View
 	self.bug = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-					@"Open", kState,
+					@"Duplicate", kState,
 					[NSNumber numberWithInt:3], kRank,
 					[NSNumber numberWithInt:11898176], kID,
 					@"Cannot remove Mail.app Unread Messages Badge", kTitle,
 					@"Mail", kProduct,
 					@"6.0 (1485)", kBuild,
 					@"UI/Usability", kClassification,
+					@"Always", kReproducibility,
 					[NSDate date], kDate,
-					@"", kNotes,
-					@"", kDetails,
+					@"This is a note", kNotes,
+					@"Summary:\r\rSomething\r\rSteps to reproduce:\r\r1.\r2.\r3.\r", kDetails,
 					[NSMutableArray arrayWithObjects: nil], kAttachments,
 					nil];
 	self.bugs = [NSMutableArray arrayWithObject:self.bug];
+	
+	NSMutableDictionary *bug3 = [NSMutableDictionary dictionaryWithDictionary:_bug];
+	[bug3 setObject:@"Insufficient Information" forKey:kState];
+	[self.bugs addObject:bug3];
+	
+	NSMutableDictionary *bug4 = [NSMutableDictionary dictionaryWithDictionary:_bug];
+	[bug4 setObject:@"3rd Party to Resolve" forKey:kState];
+	[self.bugs addObject:bug4];
+	
+	NSMutableDictionary *bug5 = [NSMutableDictionary dictionaryWithDictionary:_bug];
+	[bug5 setObject:@"Behaves Correctly" forKey:kState];
+	[self.bugs addObject:bug5];
 	
 	self.bug = [NSMutableDictionary dictionaryWithObjectsAndKeys:
 				@"Closed", kState,
@@ -105,19 +105,65 @@
 				@"This is a title", kTitle,
 				@"Mac OS X", kProduct,
 				@"10.8 (12A269)", kBuild,
-				@"UI/Usability", kClassification,
+				@"Security", kClassification,
+				@"N/A", kReproducibility,
 				[NSDate date], kDate,
-				@"", kNotes,
-				@"", kDetails,
+				@"Another note goes here.", kNotes,
+				@"Here are some\rdetails...", kDetails,
 				[NSMutableArray arrayWithObjects: nil], kAttachments,
 				nil];
 	
 	[self.bugs addObject:self.bug];
-	[self.bugs addObjectsFromArray:[NSArray arrayWithObjects:self.bug, self.bug, self.bug, self.bug, nil]];
+	
+	self.bug = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+				@"Open", kState,
+				[NSNumber numberWithInt:2], kRank,
+				[NSNumber numberWithInt:11905408], kID,
+				@"NSEvent -mouseLocation returns invalid coordinate for Retina backing store", kTitle,
+				@"Mac OS X", kProduct,
+				@"10.7+", kBuild,
+				@"Serious Issue", kClassification,
+				@"Always", kReproducibility,
+				[NSDate dateWithNaturalLanguageString:@"7/18/2012"], kDate,
+				@"Here are some notes", kNotes,
+				@"Summary:\r\rNSEvent's -mouseLocation method returns invalid coordinates for Retina backing store\r\rSteps to Reproduce:\r\r1) Obtain the current mouse location using [NSEvent mouseLocation]\r\r2) Align the mouse location to a screen's backing store using NSScreen's -backingAlignedRect:options:\r3) Convert the aligned mouse location to backing store coordinates with NSScreen's -convertRectToBacking:\r\rSee the attached CoordinateTester app as a sample.\r\rExpected Results:\r\rThe backing store coordinates should be valid.\r\rActual Results:\r\rThe backing store coordinates are invalid in the Y axis. On a 15\" Retina the range of values should be 0 to 1799 (1800 physical pixels), instead a range of 0 to 1800 pixels is reported (1801 pixels). Similarly, on non-Retina displays such as the 13\" MacBook Air, a range of values 0 to 900 is reported (901 pixels).\r\rRegression:\r\rIn prior releases of Mac OS X, the mouse location's Y axis was based at one, so a correct coordinate could be obtained by applying an offset. Values less than one are now returned (see Radar # 11905218)\r\rNotes:\r\rRunning the attached CoordinateTester app on several different systems shows these incorrect results are consistent:", kDetails,
+				[NSMutableArray arrayWithObjects: nil], kAttachments,
+				nil];
+	
+	[self.bugs addObject:self.bug];
+	
+	NSMutableDictionary *bug2 = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+								 @"Open", kState,
+								 [NSNumber numberWithInt:5], kRank,
+								 [NSNumber numberWithInt:11913121], kID,
+								 @"Enhance iTunes \"Some were not copied\" dialog", kTitle,
+								 @"iTunes", kProduct,
+								 @"10.6.3 (25)", kBuild,
+								 @"Enhancment", kClassification,
+								 @"Always", kReproducibility,
+								 [NSDate dateWithNaturalLanguageString:@"19-Jul-2012 12:53 PM"], kDate,
+								 @"", kNotes,
+								 @"Summary:\rWhen a file moves from where iTunes expects to locate it, it does not sync the file and issues a warning dialog.\rThe warning dialog has a disclosure triangle that shows all entries.\r\rThese entries however are not copyable from the dialog. Further no more than one entry at a time is selectable from the dialog.\r\rIt would be greatly helpful if this list could be fully selected, copied, or exported to more easily handle correcting the problem.\r\rSteps to Reproduce:\rMove a directory of files in iTunes Library (Can be done by moving the library as a whole)\rSync to iDevice\rWarning dialog appears\r\rExpected Results:\rList can be selected as a whole and copied or exported\r\rActual Results:\rIndividual only items can be selected but not copied.\r\rRegression:\rEnhancement\r\rNotes:\rIf this info dumps to a log somewhere, the location alone would help me.\rAdditionally posted issue to Stack Exchange:\rhttp://apple.stackexchange.com/questions/56827/getting-the-whole-itunes-not-found-list", kDetails,
+								 [NSMutableArray arrayWithObjects: nil], kAttachments,
+								 nil];
+	
+	[self.bugs addObjectsFromArray:[NSArray arrayWithObjects:bug2, self.bug, bug2, self.bug, bug2, self.bug, nil]];
 	
 	[_tableView reloadData];
 	[_tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:0] byExtendingSelection:NO];
 	[self updateDetailViews];
+	
+	_stampSound = [NSSound soundNamed:@"stamp"];
+}
+
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag
+{
+	if ( !flag ) {
+		[_mainWindow makeKeyAndOrderFront:self];
+		return YES;
+	} else {
+		return NO;
+	}
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.mattzanchelli.Sonar" in the user's Application Support directory.
@@ -230,23 +276,31 @@
 
 - (IBAction)showDebugWindow:(id)sender
 {
-	if ( [debugWindow isKeyWindow] ) {
-		[debugWindow performClose:sender];
+	if ( [_debugWindow isKeyWindow] ) {
+		[_debugWindow performClose:sender];
 	}
-	[debugWindow makeKeyAndOrderFront:sender];
+	[_debugWindow makeKeyAndOrderFront:sender];
 }
 
 #pragma mark Preferences
 
 - (void)controlTextDidChange:(NSNotification *)obj
 {
-	if ( [_appleID stringValue].length && [_password stringValue].length)
-	{
-		[_signInButton setEnabled:YES];
+	if ( obj.object == _appleID || obj.object == _password ) {
+		if ( [_appleID stringValue].length && [_password stringValue].length) {
+			[_signInButton setEnabled:YES];
+		} else {
+			[_signInButton setEnabled:NO];
+		}
 	}
-	else
-	{
-		[_signInButton setEnabled:NO];
+	
+	else if ( obj.object == _problemTitle ) {
+		//	Used to update Window Title based on Problem Title
+		NSString *title = [_problemTitle stringValue];
+		if ( title.length )
+		[_composeIssueWindow setTitle:title];
+		else
+		[_composeIssueWindow setTitle:@"New Issue"];
 	}
 }
 
@@ -285,52 +339,80 @@
 
 - (IBAction)createANewIssue:(id)sender
 {
-	NSLog(@"New Issue");
-	_newIssue = [[NSWindowController alloc] initWithWindowNibName:@"SRNewIssueWindowController"];
-	[_newIssue showWindow:self];
+	[_composeIssueWindow makeKeyAndOrderFront:sender];
 }
 
 - (IBAction)markAsResolved:(id)sender
 {
-	NSLog(@"Resolved");
+	[_stampSound play];
+	[_bug setValue:@"Resolved" forKey:kState];
+	[self updateDetailViews];
 }
 
 - (IBAction)appendMoreInformation:(id)sender
 {
-	NSLog(@"Reply");
+	
+}
+
+- (IBAction)closeNote:(NSButton *)sender
+{
+	[_bug setValue:@"" forKey:kNotes];
+	[self updateDetailViews];
 }
 
 - (IBAction)addNote:(id)sender
 {
-	
+	if ( [_bug objectForKey:kNotes] == nil || [_bug objectForKey:kNotes] == @"" ) {
+		[_bug setValue:@" " forKey:kNotes];
+		[self updateDetailViews];
+		[_noteText setStringValue:@""];
+	}
+	[_noteText becomeFirstResponder];
 }
 
 #pragma mark Table View / Detail View
 
 - (void)updateDetailViews {
 	
-	/*
-	[nameView setStringValue:[villain objectForKey:kName]];
-	[lastKnownLocationView setStringValue:[villain objectForKey:kLastKnownLocation]];
-	[lastSeenDateView setDateValue:[villain objectForKey:kLastSeenDate]];
-	if ([swornEnemyView indexOfItemWithObjectValue:[villain objectForKey:kSwornEnemy]]==NSNotFound) {
-		[swornEnemyView addItemWithObjectValue:[villain objectForKey:kSwornEnemy]];
-	}
-	[swornEnemyView selectItemWithObjectValue:[villain objectForKey:kSwornEnemy]];
-	[primaryMotivationView selectCellWithTag:[[[self class] motivations] indexOfObject:[villain objectForKey:kPrimaryMotivation]]];
-	[powersView deselectAllCells];
-	for (NSString *power in [[self class] powers]) {
-		if ([[villain objectForKey:kPowers] containsObject:power]) {
-			[powersView selectCellWithTag:[[[self class] powers] indexOfObject:power]];
-		}
-	}
-	[evilnessView setIntegerValue:[[villain objectForKey:kEvilness] integerValue]];
-	[powerSourceView setTitle:[villain objectForKey:kPowerSource]];
-	[mugshotView setImage:[villain objectForKey:kMugshot]];
-	[notesView setString:[villain objectForKey:kNotes]];
-	 */
+	NSDateFormatter *dateFormatter =[[NSDateFormatter alloc] init];
+	[dateFormatter setDateFormat:@"M/d/yy h:mm a"];
+	[_detailDate setStringValue:[dateFormatter stringFromDate:[_bug objectForKey:kDate]]];
 	
-	[_textView setString:[_bug objectForKey:kTitle]];
+	[_detailTitle setStringValue:[_bug objectForKey:kTitle]];
+	[_detailState setStringValue:[NSString stringWithFormat:@"State: %@", [_bug objectForKey:kState]]];
+	[_detailRank setStringValue:[NSString stringWithFormat:@"Rank: %@", [_bug objectForKey:kRank]]];
+	[_detailProduct setStringValue:[NSString stringWithFormat:@"Product: %@", [_bug objectForKey:kProduct]]];
+	[_detailBuild setStringValue:[NSString stringWithFormat:@"Version: %@", [_bug objectForKey:kBuild]]];
+	[_detailClassification setStringValue:[NSString stringWithFormat:@"Classification: %@", [_bug objectForKey:kClassification]]];
+	[_detailReproducibility setStringValue:[NSString stringWithFormat:@"Reproducibility: %@", [_bug objectForKey:kReproducibility]]];
+	
+	[_noteText setStringValue:[_bug objectForKey:kNotes]];
+	if ( [[_noteText stringValue] length] )
+	{
+		[_scrollView setFrame:CGRectMake(0, 0, _detailView.frame.size.width, _detailView.frame.size.height-_noteView.frame.size.height+1)];
+		[_noteView setHidden:NO];
+	}
+	else
+	{
+		[_scrollView setFrame:CGRectMake(0, 0, _detailView.frame.size.width, _detailView.frame.size.height)];
+		[_noteView setHidden:YES];
+	}
+	
+	// Not sure if working ***
+	[_scrollView setBounds:[_scrollView frame]];
+	[_scrollView.subviews[0] setFrame:[_scrollView frame]];
+	[_scrollView.subviews[0] setBounds:[_scrollView bounds]];
+	//
+	
+	[_scrollView.subviews[0] setBackgroundColor:[NSColor whiteColor]];
+	
+	[_detailBody setString:[_bug objectForKey:kDetails]];
+	[_detailBody sizeToFit]; // Does this work ***
+	
+	_stampView.state = [_bug objectForKey:kState];
+	
+	// Scroll to top ***
+	
 }
 
 #pragma mark NSTableView dataSource methods
@@ -351,8 +433,64 @@
 	{
 		self.bug = [self.bugs objectAtIndex:[_tableView selectedRow]];
 		[self updateDetailViews];
-		NSLog(@"current villain properties: %@", _bug);
 	}
+}
+
+#pragma mark Compose Issue Window methods
+
+- (IBAction)submitIssue:(id)sender
+{
+	//	NSLog(@"Title: %@", [problemTitle stringValue]);
+	//	NSLog(@"Product: %@", [product titleOfSelectedItem]);
+	//	NSLog(@"Version/Build No.: %@", [version stringValue]);
+	//	NSLog(@"Classification: %@", [classification titleOfSelectedItem]);
+	//	NSLog(@"Reproducibility: %@", [reproducibility titleOfSelectedItem]);
+	//	NSLog(@"Details:\n %@", [[details textStorage] string]);
+	//	printf("\n");
+	[_bugs insertObject:[NSMutableDictionary dictionaryWithObjectsAndKeys:
+						 @"Open", kState,
+//						 [NSNumber numberWithInt:nil], kRank,
+//						 [NSNumber numberWithInt:nil], kID,
+						 [_problemTitle stringValue], kTitle,
+						 [_product titleOfSelectedItem], kProduct,
+						 [_version stringValue], kBuild,
+						 [_classification titleOfSelectedItem], kClassification,
+						 [_reproducibility titleOfSelectedItem], kReproducibility,
+						 [NSDate date], kDate,
+						 @"", kNotes,
+						 [[_details textStorage] string], kDetails,
+						 [NSMutableArray arrayWithObjects: nil], kAttachments,
+						 nil] atIndex:0];
+	[_tableView reloadData];
+	[_tableView selectRowIndexes:[[NSIndexSet alloc] initWithIndex:0] byExtendingSelection:NO];
+	[self updateDetailViews];
+	
+	[_composeIssueWindow close];
+}
+
+- (IBAction)attach:(id)sender
+{
+	
+}
+
+- (IBAction)attachBugshots:(id)sender
+{
+	
+}
+
+- (IBAction)attachConfiguration:(id)sender
+{
+	
+}
+
+- (IBAction)getHelp:(id)sender
+{
+	
+}
+
+- (IBAction)print:(id)sender
+{
+	
 }
 
 #pragma mark Application Termination

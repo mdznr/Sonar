@@ -9,6 +9,22 @@
 /* Begin PBXBuildFile section */
 		C91CE33815AEB2B300D4C2DB /* Loupe.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C91CE33715AEB2B300D4C2DB /* Loupe.tiff */; };
 		C93CFFFC15BA162000A5A057 /* PrioritySplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */; };
+		C9406FAF15C50815002927D2 /* SRNoteViewCloseButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9406FAE15C50815002927D2 /* SRNoteViewCloseButtonCell.m */; };
+		C94690A615C0B79900A461F2 /* SRDetailBody.m in Sources */ = {isa = PBXBuildFile; fileRef = C94690A515C0B79900A461F2 /* SRDetailBody.m */; };
+		C94690CC15C13F6900A461F2 /* stamp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C94690CB15C13F6900A461F2 /* stamp.m4a */; };
+		C94690D115C1BBD300A461F2 /* SRStampView.m in Sources */ = {isa = PBXBuildFile; fileRef = C94690D015C1BBD300A461F2 /* SRStampView.m */; };
+		C94690E115C1D84400A461F2 /* Stamp3rdPartyToResolve.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690D515C1D84400A461F2 /* Stamp3rdPartyToResolve.png */; };
+		C94690E215C1D84400A461F2 /* Stamp3rdPartyToResolve@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690D615C1D84400A461F2 /* Stamp3rdPartyToResolve@2x.png */; };
+		C94690E315C1D84400A461F2 /* StampBehavesCorrectly.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690D715C1D84400A461F2 /* StampBehavesCorrectly.png */; };
+		C94690E415C1D84400A461F2 /* StampBehavesCorrectly@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690D815C1D84400A461F2 /* StampBehavesCorrectly@2x.png */; };
+		C94690E515C1D84400A461F2 /* StampClosed.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690D915C1D84400A461F2 /* StampClosed.png */; };
+		C94690E615C1D84400A461F2 /* StampClosed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690DA15C1D84400A461F2 /* StampClosed@2x.png */; };
+		C94690E715C1D84400A461F2 /* StampDuplicate.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690DB15C1D84400A461F2 /* StampDuplicate.png */; };
+		C94690E815C1D84400A461F2 /* StampDuplicate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690DC15C1D84400A461F2 /* StampDuplicate@2x.png */; };
+		C94690E915C1D84400A461F2 /* StampInsufficientInformation.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690DD15C1D84400A461F2 /* StampInsufficientInformation.png */; };
+		C94690EA15C1D84400A461F2 /* StampInsufficientInformation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690DE15C1D84400A461F2 /* StampInsufficientInformation@2x.png */; };
+		C94690EB15C1D84400A461F2 /* StampResolved.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690DF15C1D84400A461F2 /* StampResolved.png */; };
+		C94690EC15C1D84400A461F2 /* StampResolved@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690E015C1D84400A461F2 /* StampResolved@2x.png */; };
 		C948916B15AEAD6000C449E1 /* Media.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C948916A15AEAD6000C449E1 /* Media.tiff */; };
 		C949EF5915B52C24001AB919 /* Help.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C949EF5815B52C24001AB919 /* Help.tiff */; };
 		C95B2B8115914341002457DA /* Reply.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C95B2B7F15914341002457DA /* Reply.tiff */; };
@@ -30,6 +46,15 @@
 		C9C752E215922F0200813B63 /* SRBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C752E115922F0200813B63 /* SRBackgroundView.m */; };
 		C9C752F015929B6200813B63 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C752EF15929B6200813B63 /* WebKit.framework */; };
 		C9C752F41592EF6C00813B63 /* NewIssue.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9C752F31592EF6C00813B63 /* NewIssue.tiff */; };
+		C9C9611615BF81EE00EB8854 /* SRNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C9611515BF81EE00EB8854 /* SRNoteView.m */; };
+		C9C9612615BFA21900EB8854 /* NoteCloseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C9612015BFA21900EB8854 /* NoteCloseButton.png */; };
+		C9C9612715BFA21900EB8854 /* NoteCloseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C9612115BFA21900EB8854 /* NoteCloseButton@2x.png */; };
+		C9C9612815BFA21900EB8854 /* NoteCloseButtonHover.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C9612215BFA21900EB8854 /* NoteCloseButtonHover.png */; };
+		C9C9612915BFA21900EB8854 /* NoteCloseButtonHover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C9612315BFA21900EB8854 /* NoteCloseButtonHover@2x.png */; };
+		C9C9613015BFB17800EB8854 /* NoteBackgroundCap.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C9612C15BFB17800EB8854 /* NoteBackgroundCap.png */; };
+		C9C9613115BFB17800EB8854 /* NoteBackgroundCap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C9612D15BFB17800EB8854 /* NoteBackgroundCap@2x.png */; };
+		C9C9613215BFB17800EB8854 /* NoteBackgroundFill.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C9612E15BFB17800EB8854 /* NoteBackgroundFill.png */; };
+		C9C9613315BFB17800EB8854 /* NoteBackgroundFill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C9612F15BFB17800EB8854 /* NoteBackgroundFill@2x.png */; };
 		C9F9314215B01BF900B9A0C9 /* SRNewProblemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9314115B01BF900B9A0C9 /* SRNewProblemTitle.m */; };
 		C9F9314715B02A9100B9A0C9 /* SRComboBoxFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9314615B02A9100B9A0C9 /* SRComboBoxFormatter.m */; };
 		C9F9314A15B0365700B9A0C9 /* Configuration.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9F9314915B0365700B9A0C9 /* Configuration.tiff */; };
@@ -42,6 +67,25 @@
 		C91CE33715AEB2B300D4C2DB /* Loupe.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Loupe.tiff; sourceTree = "<group>"; };
 		C93CFFFA15BA162000A5A057 /* PrioritySplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrioritySplitViewDelegate.h; sourceTree = "<group>"; };
 		C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrioritySplitViewDelegate.m; sourceTree = "<group>"; };
+		C9406FAD15C50815002927D2 /* SRNoteViewCloseButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRNoteViewCloseButtonCell.h; sourceTree = "<group>"; };
+		C9406FAE15C50815002927D2 /* SRNoteViewCloseButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNoteViewCloseButtonCell.m; sourceTree = "<group>"; };
+		C94690A415C0B79900A461F2 /* SRDetailBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRDetailBody.h; path = Sonar/SRDetailBody.h; sourceTree = "<group>"; };
+		C94690A515C0B79900A461F2 /* SRDetailBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRDetailBody.m; path = Sonar/SRDetailBody.m; sourceTree = "<group>"; };
+		C94690CB15C13F6900A461F2 /* stamp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = stamp.m4a; sourceTree = "<group>"; };
+		C94690CF15C1BBD300A461F2 /* SRStampView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRStampView.h; sourceTree = "<group>"; };
+		C94690D015C1BBD300A461F2 /* SRStampView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRStampView.m; sourceTree = "<group>"; };
+		C94690D515C1D84400A461F2 /* Stamp3rdPartyToResolve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stamp3rdPartyToResolve.png; sourceTree = "<group>"; };
+		C94690D615C1D84400A461F2 /* Stamp3rdPartyToResolve@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stamp3rdPartyToResolve@2x.png"; sourceTree = "<group>"; };
+		C94690D715C1D84400A461F2 /* StampBehavesCorrectly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StampBehavesCorrectly.png; sourceTree = "<group>"; };
+		C94690D815C1D84400A461F2 /* StampBehavesCorrectly@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StampBehavesCorrectly@2x.png"; sourceTree = "<group>"; };
+		C94690D915C1D84400A461F2 /* StampClosed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StampClosed.png; sourceTree = "<group>"; };
+		C94690DA15C1D84400A461F2 /* StampClosed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StampClosed@2x.png"; sourceTree = "<group>"; };
+		C94690DB15C1D84400A461F2 /* StampDuplicate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StampDuplicate.png; sourceTree = "<group>"; };
+		C94690DC15C1D84400A461F2 /* StampDuplicate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StampDuplicate@2x.png"; sourceTree = "<group>"; };
+		C94690DD15C1D84400A461F2 /* StampInsufficientInformation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StampInsufficientInformation.png; sourceTree = "<group>"; };
+		C94690DE15C1D84400A461F2 /* StampInsufficientInformation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StampInsufficientInformation@2x.png"; sourceTree = "<group>"; };
+		C94690DF15C1D84400A461F2 /* StampResolved.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StampResolved.png; sourceTree = "<group>"; };
+		C94690E015C1D84400A461F2 /* StampResolved@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StampResolved@2x.png"; sourceTree = "<group>"; };
 		C948916A15AEAD6000C449E1 /* Media.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Media.tiff; sourceTree = "<group>"; };
 		C949EF5815B52C24001AB919 /* Help.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Help.tiff; sourceTree = "<group>"; };
 		C95B2B7F15914341002457DA /* Reply.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Reply.tiff; sourceTree = "<group>"; };
@@ -72,6 +116,16 @@
 		C9C752E115922F0200813B63 /* SRBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBackgroundView.m; sourceTree = "<group>"; };
 		C9C752EF15929B6200813B63 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C9C752F31592EF6C00813B63 /* NewIssue.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = NewIssue.tiff; sourceTree = "<group>"; };
+		C9C9611415BF81EE00EB8854 /* SRNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRNoteView.h; sourceTree = "<group>"; };
+		C9C9611515BF81EE00EB8854 /* SRNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNoteView.m; sourceTree = "<group>"; };
+		C9C9612015BFA21900EB8854 /* NoteCloseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoteCloseButton.png; sourceTree = "<group>"; };
+		C9C9612115BFA21900EB8854 /* NoteCloseButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoteCloseButton@2x.png"; sourceTree = "<group>"; };
+		C9C9612215BFA21900EB8854 /* NoteCloseButtonHover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoteCloseButtonHover.png; sourceTree = "<group>"; };
+		C9C9612315BFA21900EB8854 /* NoteCloseButtonHover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoteCloseButtonHover@2x.png"; sourceTree = "<group>"; };
+		C9C9612C15BFB17800EB8854 /* NoteBackgroundCap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoteBackgroundCap.png; sourceTree = "<group>"; };
+		C9C9612D15BFB17800EB8854 /* NoteBackgroundCap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoteBackgroundCap@2x.png"; sourceTree = "<group>"; };
+		C9C9612E15BFB17800EB8854 /* NoteBackgroundFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoteBackgroundFill.png; sourceTree = "<group>"; };
+		C9C9612F15BFB17800EB8854 /* NoteBackgroundFill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoteBackgroundFill@2x.png"; sourceTree = "<group>"; };
 		C9F9314015B01BF900B9A0C9 /* SRNewProblemTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRNewProblemTitle.h; sourceTree = "<group>"; };
 		C9F9314115B01BF900B9A0C9 /* SRNewProblemTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNewProblemTitle.m; sourceTree = "<group>"; };
 		C9F9314515B02A9100B9A0C9 /* SRComboBoxFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRComboBoxFormatter.h; sourceTree = "<group>"; };
@@ -97,6 +151,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C94690A715C0B79E00A461F2 /* Detail Body */ = {
+			isa = PBXGroup;
+			children = (
+				C94690A415C0B79900A461F2 /* SRDetailBody.h */,
+				C94690A515C0B79900A461F2 /* SRDetailBody.m */,
+			);
+			name = "Detail Body";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C94690CD15C13F6C00A461F2 /* Stamp */ = {
+			isa = PBXGroup;
+			children = (
+				C94690D515C1D84400A461F2 /* Stamp3rdPartyToResolve.png */,
+				C94690D615C1D84400A461F2 /* Stamp3rdPartyToResolve@2x.png */,
+				C94690D715C1D84400A461F2 /* StampBehavesCorrectly.png */,
+				C94690D815C1D84400A461F2 /* StampBehavesCorrectly@2x.png */,
+				C94690D915C1D84400A461F2 /* StampClosed.png */,
+				C94690DA15C1D84400A461F2 /* StampClosed@2x.png */,
+				C94690DB15C1D84400A461F2 /* StampDuplicate.png */,
+				C94690DC15C1D84400A461F2 /* StampDuplicate@2x.png */,
+				C94690DD15C1D84400A461F2 /* StampInsufficientInformation.png */,
+				C94690DE15C1D84400A461F2 /* StampInsufficientInformation@2x.png */,
+				C94690DF15C1D84400A461F2 /* StampResolved.png */,
+				C94690E015C1D84400A461F2 /* StampResolved@2x.png */,
+			);
+			name = Stamp;
+			sourceTree = "<group>";
+		};
+		C94690D215C1BBD700A461F2 /* Stamps */ = {
+			isa = PBXGroup;
+			children = (
+				C94690CF15C1BBD300A461F2 /* SRStampView.h */,
+				C94690D015C1BBD300A461F2 /* SRStampView.m */,
+			);
+			name = Stamps;
+			sourceTree = "<group>";
+		};
 		C96DCDF315907714008ECA40 = {
 			isa = PBXGroup;
 			children = (
@@ -140,14 +232,17 @@
 				C96DCE1415907714008ECA40 /* SRAppDelegate.h */,
 				C96DCE1515907714008ECA40 /* SRAppDelegate.m */,
 				C96DCE1715907714008ECA40 /* MainMenu.xib */,
-				C998649E159C2DA200963466 /* Web View Delegate */,
 				C9C752E315922F0A00813B63 /* Background View */,
-				C9C752EA159278B900813B63 /* New Issue */,
-				C9C752D815919F5A00813B63 /* Split View */,
 				C9F9F6CA15BA91FB00CD95EB /* Bug State Formatter */,
+				C94690A715C0B79E00A461F2 /* Detail Body */,
+				C9C752EA159278B900813B63 /* New Issue */,
+				C9C9611815BF81F200EB8854 /* Notes */,
+				C94690D215C1BBD700A461F2 /* Stamps */,
+				C9C752D815919F5A00813B63 /* Split View */,
+				C998649E159C2DA200963466 /* Web View Delegate */,
 				C96DCE26159077A3008ECA40 /* Sonar.entitlements */,
 				C96DCE1A15907714008ECA40 /* Sonar.xcdatamodeld */,
-				C96DCE3315907890008ECA40 /* Icons */,
+				C96DCE3315907890008ECA40 /* Resources */,
 				C96DCE0915907714008ECA40 /* Supporting Files */,
 			);
 			path = Sonar;
@@ -165,14 +260,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C96DCE3315907890008ECA40 /* Icons */ = {
+		C96DCE3315907890008ECA40 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C9C9611D15BFA21000EB8854 /* Note View */,
 				C9F9F6CF15BA96FC00CD95EB /* State Icons */,
+				C94690CD15C13F6C00A461F2 /* Stamp */,
+				C94690CB15C13F6900A461F2 /* stamp.m4a */,
 				C9F9F6D015BA970600CD95EB /* Toolbar Icons */,
 				C96DCE2415907797008ECA40 /* Sonar.icns */,
 			);
-			name = Icons;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C998649E159C2DA200963466 /* Web View Delegate */ = {
@@ -212,6 +310,32 @@
 				C9F9314815B02A9400B9A0C9 /* Combo Box */,
 			);
 			name = "New Issue";
+			sourceTree = "<group>";
+		};
+		C9C9611815BF81F200EB8854 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				C9C9611415BF81EE00EB8854 /* SRNoteView.h */,
+				C9C9611515BF81EE00EB8854 /* SRNoteView.m */,
+				C9406FAD15C50815002927D2 /* SRNoteViewCloseButtonCell.h */,
+				C9406FAE15C50815002927D2 /* SRNoteViewCloseButtonCell.m */,
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
+		C9C9611D15BFA21000EB8854 /* Note View */ = {
+			isa = PBXGroup;
+			children = (
+				C9C9612C15BFB17800EB8854 /* NoteBackgroundCap.png */,
+				C9C9612D15BFB17800EB8854 /* NoteBackgroundCap@2x.png */,
+				C9C9612E15BFB17800EB8854 /* NoteBackgroundFill.png */,
+				C9C9612F15BFB17800EB8854 /* NoteBackgroundFill@2x.png */,
+				C9C9612015BFA21900EB8854 /* NoteCloseButton.png */,
+				C9C9612115BFA21900EB8854 /* NoteCloseButton@2x.png */,
+				C9C9612215BFA21900EB8854 /* NoteCloseButtonHover.png */,
+				C9C9612315BFA21900EB8854 /* NoteCloseButtonHover@2x.png */,
+			);
+			name = "Note View";
 			sourceTree = "<group>";
 		};
 		C9F9314415B02A5800B9A0C9 /* Problem Title */ = {
@@ -333,6 +457,27 @@
 				C949EF5915B52C24001AB919 /* Help.tiff in Resources */,
 				C9F9F6CE15BA96F800CD95EB /* open.png in Resources */,
 				C9F9F6D215BB63CD00CD95EB /* open@2x.png in Resources */,
+				C9C9612615BFA21900EB8854 /* NoteCloseButton.png in Resources */,
+				C9C9612715BFA21900EB8854 /* NoteCloseButton@2x.png in Resources */,
+				C9C9612815BFA21900EB8854 /* NoteCloseButtonHover.png in Resources */,
+				C9C9612915BFA21900EB8854 /* NoteCloseButtonHover@2x.png in Resources */,
+				C9C9613015BFB17800EB8854 /* NoteBackgroundCap.png in Resources */,
+				C9C9613115BFB17800EB8854 /* NoteBackgroundCap@2x.png in Resources */,
+				C9C9613215BFB17800EB8854 /* NoteBackgroundFill.png in Resources */,
+				C9C9613315BFB17800EB8854 /* NoteBackgroundFill@2x.png in Resources */,
+				C94690CC15C13F6900A461F2 /* stamp.m4a in Resources */,
+				C94690E115C1D84400A461F2 /* Stamp3rdPartyToResolve.png in Resources */,
+				C94690E215C1D84400A461F2 /* Stamp3rdPartyToResolve@2x.png in Resources */,
+				C94690E315C1D84400A461F2 /* StampBehavesCorrectly.png in Resources */,
+				C94690E415C1D84400A461F2 /* StampBehavesCorrectly@2x.png in Resources */,
+				C94690E515C1D84400A461F2 /* StampClosed.png in Resources */,
+				C94690E615C1D84400A461F2 /* StampClosed@2x.png in Resources */,
+				C94690E715C1D84400A461F2 /* StampDuplicate.png in Resources */,
+				C94690E815C1D84400A461F2 /* StampDuplicate@2x.png in Resources */,
+				C94690E915C1D84400A461F2 /* StampInsufficientInformation.png in Resources */,
+				C94690EA15C1D84400A461F2 /* StampInsufficientInformation@2x.png in Resources */,
+				C94690EB15C1D84400A461F2 /* StampResolved.png in Resources */,
+				C94690EC15C1D84400A461F2 /* StampResolved@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +498,10 @@
 				C9F9314715B02A9100B9A0C9 /* SRComboBoxFormatter.m in Sources */,
 				C93CFFFC15BA162000A5A057 /* PrioritySplitViewDelegate.m in Sources */,
 				C9F9F6C915BA91F700CD95EB /* SRStateFormatter.m in Sources */,
+				C9C9611615BF81EE00EB8854 /* SRNoteView.m in Sources */,
+				C94690A615C0B79900A461F2 /* SRDetailBody.m in Sources */,
+				C94690D115C1BBD300A461F2 /* SRStampView.m in Sources */,
+				C9406FAF15C50815002927D2 /* SRNoteViewCloseButtonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -419,7 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -444,6 +593,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sonar/Sonar-Prefix.pch";
 				INFOPLIST_FILE = "Sonar/Sonar-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +606,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sonar/Sonar-Prefix.pch";
 				INFOPLIST_FILE = "Sonar/Sonar-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
