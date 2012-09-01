@@ -384,7 +384,7 @@
 {
 	if ( [sender state] == NSOnState )
 	{
-
+//		[_tableView removeTableColumn:[[_tableView headerView] ]];
 	}
 	else
 	{

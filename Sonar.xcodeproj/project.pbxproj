@@ -29,6 +29,7 @@
 		C949EF5915B52C24001AB919 /* Help.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C949EF5815B52C24001AB919 /* Help.tiff */; };
 		C95B2B8115914341002457DA /* Reply.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C95B2B7F15914341002457DA /* Reply.tiff */; };
 		C95B2B8215914341002457DA /* Resolved.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C95B2B8015914341002457DA /* Resolved.tiff */; };
+		C95E915315F2C0C7002BCC8D /* NSQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E915215F2C0C7002BCC8D /* NSQueue.m */; };
 		C96DCE0315907714008ECA40 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96DCE0215907714008ECA40 /* Cocoa.framework */; };
 		C96DCE0D15907714008ECA40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE0B15907714008ECA40 /* InfoPlist.strings */; };
 		C96DCE0F15907714008ECA40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C96DCE0E15907714008ECA40 /* main.m */; };
@@ -89,6 +90,8 @@
 		C949EF5815B52C24001AB919 /* Help.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Help.tiff; sourceTree = "<group>"; };
 		C95B2B7F15914341002457DA /* Reply.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Reply.tiff; sourceTree = "<group>"; };
 		C95B2B8015914341002457DA /* Resolved.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Resolved.tiff; sourceTree = "<group>"; };
+		C95E915115F2C0C7002BCC8D /* NSQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSQueue.h; sourceTree = "<group>"; };
+		C95E915215F2C0C7002BCC8D /* NSQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSQueue.m; sourceTree = "<group>"; };
 		C96DCDFE15907714008ECA40 /* Sonar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sonar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96DCE0215907714008ECA40 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C96DCE0515907714008ECA40 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -184,6 +187,15 @@
 			name = Stamps;
 			sourceTree = "<group>";
 		};
+		C95E915515F2C5EA002BCC8D /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				C95E915115F2C0C7002BCC8D /* NSQueue.h */,
+				C95E915215F2C0C7002BCC8D /* NSQueue.m */,
+			);
+			name = Queue;
+			sourceTree = "<group>";
+		};
 		C96DCDF315907714008ECA40 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +251,7 @@
 				C9486FA015CF5DBC009DD843 /* SRRadar.h */,
 				C9486FA115CF5DBC009DD843 /* SRRadar.m */,
 				C96DCE1A15907714008ECA40 /* Sonar.xcdatamodeld */,
+				C95E915515F2C5EA002BCC8D /* Queue */,
 				C96DCE3315907890008ECA40 /* Resources */,
 				C96DCE0915907714008ECA40 /* Supporting Files */,
 			);
@@ -492,6 +505,7 @@
 				C9406FAF15C50815002927D2 /* SRNoteViewCloseButtonCell.m in Sources */,
 				C9486F7715CF21FA009DD843 /* SRSplitView.m in Sources */,
 				C9486FA215CF5DBC009DD843 /* SRRadar.m in Sources */,
+				C95E915315F2C0C7002BCC8D /* NSQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
