@@ -16,9 +16,7 @@
 	{
 		lengthsByViewIndex = [[NSMutableDictionary alloc] initWithCapacity:0];
 	}
-	[lengthsByViewIndex
-	 setObject:[NSNumber numberWithDouble:minLength]
-	 forKey:[NSNumber numberWithInteger:viewIndex]];
+	[lengthsByViewIndex setObject:[NSNumber numberWithDouble:minLength] forKey:[NSNumber numberWithInteger:viewIndex]];
 }
 
 - (void)setPriority:(NSInteger)priorityIndex forViewAtIndex:(NSInteger)viewIndex
@@ -27,9 +25,7 @@
 	{
 		viewIndicesByPriority = [[NSMutableDictionary alloc] initWithCapacity:0];
 	}
-	[viewIndicesByPriority
-	 setObject:[NSNumber numberWithInteger:viewIndex]
-	 forKey:[NSNumber numberWithInteger:priorityIndex]];
+	[viewIndicesByPriority setObject:[NSNumber numberWithInteger:viewIndex] forKey:[NSNumber numberWithInteger:priorityIndex]];
 }
 
 - (CGFloat)splitView:(NSSplitView *)sender
@@ -47,9 +43,7 @@ constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)offset
 		frameOrigin = subviewFrame.origin.y;
 	}
 	
-	CGFloat minimumSize =
-	[[lengthsByViewIndex objectForKey:[NSNumber numberWithInteger:offset]]
-	 doubleValue];
+	CGFloat minimumSize = [[lengthsByViewIndex objectForKey:[NSNumber numberWithInteger:offset]] doubleValue];
 	
 	return frameOrigin + minimumSize;
 }
@@ -64,20 +58,16 @@ constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)offset
 	CGFloat currentCoordinate;
 	if ([sender isVertical])
 	{
-		currentCoordinate =
-		growingSubviewFrame.origin.x + growingSubviewFrame.size.width;
+		currentCoordinate = growingSubviewFrame.origin.x + growingSubviewFrame.size.width;
 		shrinkingSize = shrinkingSubviewFrame.size.width;
 	}
 	else
 	{
-		currentCoordinate =
-		growingSubviewFrame.origin.y + growingSubviewFrame.size.height;
+		currentCoordinate = growingSubviewFrame.origin.y + growingSubviewFrame.size.height;
 		shrinkingSize = shrinkingSubviewFrame.size.height;
 	}
 	
-	CGFloat minimumSize =
-	[[lengthsByViewIndex objectForKey:[NSNumber numberWithInteger:offset + 1]]
-	 doubleValue];
+	CGFloat minimumSize = [[lengthsByViewIndex objectForKey:[NSNumber numberWithInteger:offset + 1]] doubleValue];
 	
 	return currentCoordinate + (shrinkingSize - minimumSize);
 }
@@ -89,9 +79,7 @@ constrainMinCoordinate:(CGFloat)proposedMin ofSubviewAt:(NSInteger)offset
 	
 	BOOL isVertical = [sender isVertical];
 	
-	CGFloat delta = [sender isVertical] ?
-	(sender.bounds.size.width - oldSize.width) :
-	(sender.bounds.size.height - oldSize.height);
+	CGFloat delta = [sender isVertical] ? (sender.bounds.size.width - oldSize.width) : (sender.bounds.size.height - oldSize.height);
 	
 	NSInteger viewCountCheck = 0;
 	

@@ -13,6 +13,7 @@
 #import "SRWebViewDelegate.h"
 #import "SRNoteView.h"
 #import "SRStampView.h"
+#import "SRSplitView.h"
 
 @interface SRAppDelegate : NSObject <NSApplicationDelegate>
 
@@ -21,7 +22,7 @@
 @property (assign) IBOutlet NSWindow *preferencesWindow;
 @property (assign) IBOutlet NSWindow *composeIssueWindow;
 
-@property (retain) IBOutlet NSSplitView *splitView;
+@property (retain) IBOutlet SRSplitView *splitView;
 @property (retain) PrioritySplitViewDelegate *splitViewDelegate;
 @property (strong) IBOutlet NSTableView *tableView;
 @property (strong) IBOutlet NSView *detailView;
@@ -62,7 +63,6 @@
 // Compose Issue
 // Toolbar
 @property (weak) IBOutlet NSToolbarItem *submitIcon;
-@property (weak) IBOutlet NSToolbarItem *mediaIcon;
 @property (weak) IBOutlet NSToolbarItem *attachIcon;
 @property (weak) IBOutlet NSToolbarItem *helpIcon;
 
@@ -87,7 +87,6 @@
 - (IBAction)closeNote:(id)sender;
 
 - (IBAction)submitIssue:(id)sender;
-- (IBAction)attachBugshots:(id)sender;
 - (IBAction)attach:(id)sender;
 - (IBAction)getHelp:(id)sender;
 - (IBAction)print:(id)sender;

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C91CE33815AEB2B300D4C2DB /* Loupe.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C91CE33715AEB2B300D4C2DB /* Loupe.tiff */; };
 		C93CFFFC15BA162000A5A057 /* PrioritySplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */; };
 		C9406FAF15C50815002927D2 /* SRNoteViewCloseButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9406FAE15C50815002927D2 /* SRNoteViewCloseButtonCell.m */; };
 		C94690A615C0B79900A461F2 /* SRDetailBody.m in Sources */ = {isa = PBXBuildFile; fileRef = C94690A515C0B79900A461F2 /* SRDetailBody.m */; };
@@ -25,7 +24,8 @@
 		C94690EA15C1D84400A461F2 /* StampInsufficientInformation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690DE15C1D84400A461F2 /* StampInsufficientInformation@2x.png */; };
 		C94690EB15C1D84400A461F2 /* StampResolved.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690DF15C1D84400A461F2 /* StampResolved.png */; };
 		C94690EC15C1D84400A461F2 /* StampResolved@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94690E015C1D84400A461F2 /* StampResolved@2x.png */; };
-		C948916B15AEAD6000C449E1 /* Media.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C948916A15AEAD6000C449E1 /* Media.tiff */; };
+		C9486F7715CF21FA009DD843 /* SRSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9486F7615CF21FA009DD843 /* SRSplitView.m */; };
+		C9486FA215CF5DBC009DD843 /* SRRadar.m in Sources */ = {isa = PBXBuildFile; fileRef = C9486FA115CF5DBC009DD843 /* SRRadar.m */; };
 		C949EF5915B52C24001AB919 /* Help.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C949EF5815B52C24001AB919 /* Help.tiff */; };
 		C95B2B8115914341002457DA /* Reply.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C95B2B7F15914341002457DA /* Reply.tiff */; };
 		C95B2B8215914341002457DA /* Resolved.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C95B2B8015914341002457DA /* Resolved.tiff */; };
@@ -41,8 +41,6 @@
 		C9A01A3015AE328D001BC4B1 /* Note.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9A01A2F15AE328D001BC4B1 /* Note.tiff */; };
 		C9B4D75215916D890001B573 /* Sonar.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE26159077A3008ECA40 /* Sonar.entitlements */; };
 		C9B4D7621591721B0001B573 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96DCE0715907714008ECA40 /* Foundation.framework */; };
-		C9C752DE1591BD3300813B63 /* SRNewIssueWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C752DC1591BD3300813B63 /* SRNewIssueWindowController.m */; };
-		C9C752DF1591BD3300813B63 /* SRNewIssueWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C752DD1591BD3300813B63 /* SRNewIssueWindowController.xib */; };
 		C9C752E215922F0200813B63 /* SRBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C752E115922F0200813B63 /* SRBackgroundView.m */; };
 		C9C752F015929B6200813B63 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C752EF15929B6200813B63 /* WebKit.framework */; };
 		C9C752F41592EF6C00813B63 /* NewIssue.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9C752F31592EF6C00813B63 /* NewIssue.tiff */; };
@@ -57,14 +55,12 @@
 		C9C9613315BFB17800EB8854 /* NoteBackgroundFill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C9612F15BFB17800EB8854 /* NoteBackgroundFill@2x.png */; };
 		C9F9314215B01BF900B9A0C9 /* SRNewProblemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9314115B01BF900B9A0C9 /* SRNewProblemTitle.m */; };
 		C9F9314715B02A9100B9A0C9 /* SRComboBoxFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9314615B02A9100B9A0C9 /* SRComboBoxFormatter.m */; };
-		C9F9314A15B0365700B9A0C9 /* Configuration.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C9F9314915B0365700B9A0C9 /* Configuration.tiff */; };
 		C9F9F6C915BA91F700CD95EB /* SRStateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F9F6C815BA91F700CD95EB /* SRStateFormatter.m */; };
 		C9F9F6CE15BA96F800CD95EB /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F9F6CC15BA96F800CD95EB /* open.png */; };
 		C9F9F6D215BB63CD00CD95EB /* open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F9F6D115BB63CD00CD95EB /* open@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C91CE33715AEB2B300D4C2DB /* Loupe.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Loupe.tiff; sourceTree = "<group>"; };
 		C93CFFFA15BA162000A5A057 /* PrioritySplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrioritySplitViewDelegate.h; sourceTree = "<group>"; };
 		C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrioritySplitViewDelegate.m; sourceTree = "<group>"; };
 		C9406FAD15C50815002927D2 /* SRNoteViewCloseButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRNoteViewCloseButtonCell.h; sourceTree = "<group>"; };
@@ -86,7 +82,10 @@
 		C94690DE15C1D84400A461F2 /* StampInsufficientInformation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StampInsufficientInformation@2x.png"; sourceTree = "<group>"; };
 		C94690DF15C1D84400A461F2 /* StampResolved.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StampResolved.png; sourceTree = "<group>"; };
 		C94690E015C1D84400A461F2 /* StampResolved@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StampResolved@2x.png"; sourceTree = "<group>"; };
-		C948916A15AEAD6000C449E1 /* Media.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Media.tiff; sourceTree = "<group>"; };
+		C9486F7515CF21FA009DD843 /* SRSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSplitView.h; sourceTree = "<group>"; };
+		C9486F7615CF21FA009DD843 /* SRSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSplitView.m; sourceTree = "<group>"; };
+		C9486FA015CF5DBC009DD843 /* SRRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRadar.h; sourceTree = "<group>"; };
+		C9486FA115CF5DBC009DD843 /* SRRadar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRadar.m; sourceTree = "<group>"; };
 		C949EF5815B52C24001AB919 /* Help.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Help.tiff; sourceTree = "<group>"; };
 		C95B2B7F15914341002457DA /* Reply.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Reply.tiff; sourceTree = "<group>"; };
 		C95B2B8015914341002457DA /* Resolved.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Resolved.tiff; sourceTree = "<group>"; };
@@ -109,9 +108,6 @@
 		C998649B159C2D6400963466 /* SRWebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebViewDelegate.h; sourceTree = "<group>"; };
 		C998649C159C2D6400963466 /* SRWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebViewDelegate.m; sourceTree = "<group>"; };
 		C9A01A2F15AE328D001BC4B1 /* Note.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Note.tiff; sourceTree = "<group>"; };
-		C9C752DB1591BD3300813B63 /* SRNewIssueWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRNewIssueWindowController.h; sourceTree = "<group>"; };
-		C9C752DC1591BD3300813B63 /* SRNewIssueWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNewIssueWindowController.m; sourceTree = "<group>"; };
-		C9C752DD1591BD3300813B63 /* SRNewIssueWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SRNewIssueWindowController.xib; sourceTree = "<group>"; };
 		C9C752E015922F0200813B63 /* SRBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBackgroundView.h; sourceTree = "<group>"; };
 		C9C752E115922F0200813B63 /* SRBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBackgroundView.m; sourceTree = "<group>"; };
 		C9C752EF15929B6200813B63 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -130,7 +126,6 @@
 		C9F9314115B01BF900B9A0C9 /* SRNewProblemTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNewProblemTitle.m; sourceTree = "<group>"; };
 		C9F9314515B02A9100B9A0C9 /* SRComboBoxFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRComboBoxFormatter.h; sourceTree = "<group>"; };
 		C9F9314615B02A9100B9A0C9 /* SRComboBoxFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRComboBoxFormatter.m; sourceTree = "<group>"; };
-		C9F9314915B0365700B9A0C9 /* Configuration.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Configuration.tiff; sourceTree = "<group>"; };
 		C9F9F6C715BA91F700CD95EB /* SRStateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRStateFormatter.h; sourceTree = "<group>"; };
 		C9F9F6C815BA91F700CD95EB /* SRStateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRStateFormatter.m; sourceTree = "<group>"; };
 		C9F9F6CC15BA96F800CD95EB /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
@@ -241,6 +236,8 @@
 				C9C752D815919F5A00813B63 /* Split View */,
 				C998649E159C2DA200963466 /* Web View Delegate */,
 				C96DCE26159077A3008ECA40 /* Sonar.entitlements */,
+				C9486FA015CF5DBC009DD843 /* SRRadar.h */,
+				C9486FA115CF5DBC009DD843 /* SRRadar.m */,
 				C96DCE1A15907714008ECA40 /* Sonar.xcdatamodeld */,
 				C96DCE3315907890008ECA40 /* Resources */,
 				C96DCE0915907714008ECA40 /* Supporting Files */,
@@ -287,6 +284,8 @@
 			children = (
 				C93CFFFA15BA162000A5A057 /* PrioritySplitViewDelegate.h */,
 				C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */,
+				C9486F7515CF21FA009DD843 /* SRSplitView.h */,
+				C9486F7615CF21FA009DD843 /* SRSplitView.m */,
 			);
 			name = "Split View";
 			sourceTree = "<group>";
@@ -303,9 +302,6 @@
 		C9C752EA159278B900813B63 /* New Issue */ = {
 			isa = PBXGroup;
 			children = (
-				C9C752DB1591BD3300813B63 /* SRNewIssueWindowController.h */,
-				C9C752DC1591BD3300813B63 /* SRNewIssueWindowController.m */,
-				C9C752DD1591BD3300813B63 /* SRNewIssueWindowController.xib */,
 				C9F9314415B02A5800B9A0C9 /* Problem Title */,
 				C9F9314815B02A9400B9A0C9 /* Combo Box */,
 			);
@@ -378,9 +374,6 @@
 			isa = PBXGroup;
 			children = (
 				C949EF5815B52C24001AB919 /* Help.tiff */,
-				C9F9314915B0365700B9A0C9 /* Configuration.tiff */,
-				C91CE33715AEB2B300D4C2DB /* Loupe.tiff */,
-				C948916A15AEAD6000C449E1 /* Media.tiff */,
 				C9C752F31592EF6C00813B63 /* NewIssue.tiff */,
 				C9A01A2F15AE328D001BC4B1 /* Note.tiff */,
 				C95B2B7F15914341002457DA /* Reply.tiff */,
@@ -448,12 +441,8 @@
 				C95B2B8115914341002457DA /* Reply.tiff in Resources */,
 				C95B2B8215914341002457DA /* Resolved.tiff in Resources */,
 				C9B4D75215916D890001B573 /* Sonar.entitlements in Resources */,
-				C9C752DF1591BD3300813B63 /* SRNewIssueWindowController.xib in Resources */,
 				C9C752F41592EF6C00813B63 /* NewIssue.tiff in Resources */,
 				C9A01A3015AE328D001BC4B1 /* Note.tiff in Resources */,
-				C948916B15AEAD6000C449E1 /* Media.tiff in Resources */,
-				C91CE33815AEB2B300D4C2DB /* Loupe.tiff in Resources */,
-				C9F9314A15B0365700B9A0C9 /* Configuration.tiff in Resources */,
 				C949EF5915B52C24001AB919 /* Help.tiff in Resources */,
 				C9F9F6CE15BA96F800CD95EB /* open.png in Resources */,
 				C9F9F6D215BB63CD00CD95EB /* open@2x.png in Resources */,
@@ -491,7 +480,6 @@
 				C96DCE0F15907714008ECA40 /* main.m in Sources */,
 				C96DCE1615907714008ECA40 /* SRAppDelegate.m in Sources */,
 				C96DCE1C15907714008ECA40 /* Sonar.xcdatamodeld in Sources */,
-				C9C752DE1591BD3300813B63 /* SRNewIssueWindowController.m in Sources */,
 				C9C752E215922F0200813B63 /* SRBackgroundView.m in Sources */,
 				C998649D159C2D6400963466 /* SRWebViewDelegate.m in Sources */,
 				C9F9314215B01BF900B9A0C9 /* SRNewProblemTitle.m in Sources */,
@@ -502,6 +490,8 @@
 				C94690A615C0B79900A461F2 /* SRDetailBody.m in Sources */,
 				C94690D115C1BBD300A461F2 /* SRStampView.m in Sources */,
 				C9406FAF15C50815002927D2 /* SRNoteViewCloseButtonCell.m in Sources */,
+				C9486F7715CF21FA009DD843 /* SRSplitView.m in Sources */,
+				C9486FA215CF5DBC009DD843 /* SRRadar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

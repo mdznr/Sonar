@@ -10,16 +10,6 @@
 
 @implementation SRNoteViewCloseButtonCell
 
-- (void)mouseEntered:(NSEvent *)event
-{
-	
-}
-
-- (void)mouseExited:(NSEvent *)event
-{
-	
-}
-
 - (void)drawBezelWithFrame:(NSRect)frame inView:(NSView *)controlView
 {
 	if ( [self isHighlighted] )

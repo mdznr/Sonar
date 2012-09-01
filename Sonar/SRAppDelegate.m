@@ -362,7 +362,7 @@
 
 - (IBAction)addNote:(id)sender
 {
-	if ( [_bug objectForKey:kNotes] == nil || [_bug objectForKey:kNotes] == @"" ) {
+	if ( [_bug objectForKey:kNotes] == nil || [[_bug objectForKey:kNotes] isEqualToString:@""] ) {
 		[_bug setValue:@" " forKey:kNotes];
 		[self updateDetailViews];
 		[_noteText setStringValue:@""];
@@ -370,9 +370,30 @@
 	[_noteText becomeFirstResponder];
 }
 
+#pragma mark Updates to NSText
+
+- (IBAction)updateNotes:(NSTextField *)sender
+{
+	[[_bugs objectAtIndex:[_tableView selectedRow]] setObject:[sender stringValue] forKey:kNotes];
+	[_tableView reloadData];
+}
+
 #pragma mark Table View / Detail View
 
-- (void)updateDetailViews {
+- (IBAction)showStateHeader:(NSButton *)sender
+{
+	if ( [sender state] == NSOnState )
+	{
+
+	}
+	else
+	{
+		[_tableView addTableColumn:[[NSTableColumn alloc] initWithIdentifier:@"Attachments"]];
+	}
+}
+
+- (void)updateDetailViews
+{
 	
 	NSDateFormatter *dateFormatter =[[NSDateFormatter alloc] init];
 	[dateFormatter setDateFormat:@"M/d/yy h:mm a"];
@@ -473,16 +494,6 @@
 	
 }
 
-- (IBAction)attachBugshots:(id)sender
-{
-	
-}
-
-- (IBAction)attachConfiguration:(id)sender
-{
-	
-}
-
 - (IBAction)getHelp:(id)sender
 {
 	
@@ -494,6 +505,11 @@
 }
 
 #pragma mark Application Termination
+
+- (void)applicationWillTerminate:(NSNotification *)notification
+{
+	[_splitView saveDefault];
+}
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
 {
