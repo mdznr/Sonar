@@ -30,6 +30,7 @@
 		C95B2B8115914341002457DA /* Reply.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C95B2B7F15914341002457DA /* Reply.tiff */; };
 		C95B2B8215914341002457DA /* Resolved.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C95B2B8015914341002457DA /* Resolved.tiff */; };
 		C95E915315F2C0C7002BCC8D /* NSQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E915215F2C0C7002BCC8D /* NSQueue.m */; };
+		C95E915815F2C634002BCC8D /* SRWebViewAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E915715F2C634002BCC8D /* SRWebViewAction.m */; };
 		C96DCE0315907714008ECA40 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96DCE0215907714008ECA40 /* Cocoa.framework */; };
 		C96DCE0D15907714008ECA40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C96DCE0B15907714008ECA40 /* InfoPlist.strings */; };
 		C96DCE0F15907714008ECA40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C96DCE0E15907714008ECA40 /* main.m */; };
@@ -92,6 +93,8 @@
 		C95B2B8015914341002457DA /* Resolved.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Resolved.tiff; sourceTree = "<group>"; };
 		C95E915115F2C0C7002BCC8D /* NSQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSQueue.h; sourceTree = "<group>"; };
 		C95E915215F2C0C7002BCC8D /* NSQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSQueue.m; sourceTree = "<group>"; };
+		C95E915615F2C634002BCC8D /* SRWebViewAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebViewAction.h; sourceTree = "<group>"; };
+		C95E915715F2C634002BCC8D /* SRWebViewAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebViewAction.m; sourceTree = "<group>"; };
 		C96DCDFE15907714008ECA40 /* Sonar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sonar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96DCE0215907714008ECA40 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C96DCE0515907714008ECA40 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -196,6 +199,15 @@
 			name = Queue;
 			sourceTree = "<group>";
 		};
+		C95E915915F2C640002BCC8D /* Web View Action */ = {
+			isa = PBXGroup;
+			children = (
+				C95E915615F2C634002BCC8D /* SRWebViewAction.h */,
+				C95E915715F2C634002BCC8D /* SRWebViewAction.m */,
+			);
+			name = "Web View Action";
+			sourceTree = "<group>";
+		};
 		C96DCDF315907714008ECA40 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +259,7 @@
 				C94690D215C1BBD700A461F2 /* Stamps */,
 				C9C752D815919F5A00813B63 /* Split View */,
 				C998649E159C2DA200963466 /* Web View Delegate */,
+				C95E915915F2C640002BCC8D /* Web View Action */,
 				C96DCE26159077A3008ECA40 /* Sonar.entitlements */,
 				C9486FA015CF5DBC009DD843 /* SRRadar.h */,
 				C9486FA115CF5DBC009DD843 /* SRRadar.m */,
@@ -506,6 +519,7 @@
 				C9486F7715CF21FA009DD843 /* SRSplitView.m in Sources */,
 				C9486FA215CF5DBC009DD843 /* SRRadar.m in Sources */,
 				C95E915315F2C0C7002BCC8D /* NSQueue.m in Sources */,
+				C95E915815F2C634002BCC8D /* SRWebViewAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

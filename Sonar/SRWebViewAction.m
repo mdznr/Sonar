@@ -18,15 +18,15 @@
  */
 
 //
-//  SRNoteView.h
+//  SRWebViewAction.m
 //  Sonar
 //
-//  Created by Matt on 7/24/12.
+//  Created by Matt on 9/1/12.
 //  Copyright (c) 2012 Matt Zanchelli. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "SRWebViewAction.h"
 
-@interface SRNoteView : NSView
+@implementation SRWebViewAction
 
 @end
