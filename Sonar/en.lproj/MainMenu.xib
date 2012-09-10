@@ -946,7 +946,7 @@
 					<bool key="NSToolbarPrefersToBeShown">YES</bool>
 					<bool key="NSToolbarShowsBaselineSeparator">YES</bool>
 					<bool key="NSToolbarAllowsUserCustomization">YES</bool>
-					<bool key="NSToolbarAutosavesConfiguration">NO</bool>
+					<bool key="NSToolbarAutosavesConfiguration">YES</bool>
 					<int key="NSToolbarDisplayMode">1</int>
 					<int key="NSToolbarSizeMode">1</int>
 					<dictionary class="NSMutableDictionary" key="NSToolbarIBIdentifiedItems">
@@ -958,9 +958,11 @@
 							<string key="NSToolbarItemPaletteLabel">Search</string>
 							<nil key="NSToolbarItemToolTip"/>
 							<object class="NSSearchField" key="NSToolbarItemView" id="870831584">
-								<nil key="NSNextResponder"/>
+								<reference key="NSNextResponder"/>
 								<int key="NSvFlags">268</int>
 								<string key="NSFrame">{{0, 14}, {96, 22}}</string>
+								<reference key="NSSuperview"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="NSEnabled">YES</bool>
 								<object class="NSSearchFieldCell" key="NSCell" id="82954598">
@@ -3795,7 +3797,7 @@ wGw</bytes>
 							<string key="NSFrame">{{12, 59}, {282, 5}}</string>
 							<reference key="NSSuperview" ref="245848410"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="1069535373"/>
+							<reference key="NSNextKeyView"/>
 							<bool key="NSViewIsLayerTreeHost">YES</bool>
 							<double key="NSViewAlphaValue">0.50000000000000011</double>
 							<object class="NSShadow" key="NSViewShadow">
@@ -4305,7 +4307,7 @@ wGw</bytes>
 						<reference key="source" ref="1050"/>
 						<reference key="destination" ref="976324537"/>
 					</object>
-					<int key="connectionID">978</int>
+					<int key="connectionID">1312</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -4757,14 +4759,6 @@ wGw</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">splitView</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="405823041"/>
-					</object>
-					<int key="connectionID">973</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">mainWindow</string>
 						<reference key="source" ref="976324537"/>
 						<reference key="destination" ref="972006081"/>
@@ -4933,14 +4927,6 @@ wGw</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">detailView</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="979047068"/>
-					</object>
-					<int key="connectionID">1133</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">stampView</string>
 						<reference key="source" ref="976324537"/>
 						<reference key="destination" ref="469553247"/>
@@ -5101,6 +5087,22 @@ wGw</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
+						<string key="label">splitView</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="405823041"/>
+					</object>
+					<int key="connectionID">1309</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">detailView</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="979047068"/>
+					</object>
+					<int key="connectionID">1313</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
 						<string key="label">frameLoadDelegate</string>
 						<reference key="source" ref="471075411"/>
 						<reference key="destination" ref="162990245"/>
@@ -5109,19 +5111,19 @@ wGw</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">dataSource</string>
-						<reference key="source" ref="69696927"/>
-						<reference key="destination" ref="976324537"/>
-					</object>
-					<int key="connectionID">981</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">delegate</string>
 						<reference key="source" ref="69696927"/>
 						<reference key="destination" ref="976324537"/>
 					</object>
 					<int key="connectionID">982</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">dataSource</string>
+						<reference key="source" ref="69696927"/>
+						<reference key="destination" ref="976324537"/>
+					</object>
+					<int key="connectionID">1305</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -7810,7 +7812,7 @@ wGw</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">1289</int>
+			<int key="maxID">1313</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

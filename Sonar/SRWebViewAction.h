@@ -31,6 +31,7 @@
 
 @property NSURL *urlToLoad;
 @property NSMutableArray *javascriptToPerform;
-// Need somewhere to report errorsiphoto
+// @propery to where to report errors and deal with them
+// Upload failed or no internet?
 
 @end

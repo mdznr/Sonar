@@ -200,8 +200,7 @@
         return _managedObjectModel;
     }
 	
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Sonar" withExtension:@"momd"];
-    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    _managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
     return _managedObjectModel;
 }
 
@@ -456,19 +455,26 @@
 }
 
 #pragma mark NSTableView dataSource methods
-- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView {
+
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView
+{
 	return [_bugs count];
 }
-- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
+{
 	return [[_bugs objectAtIndex:rowIndex] objectForKey:[aTableColumn identifier]];
 }
-- (void)tableView:(NSTableView *)aTableView setObjectValue:(id)anObject forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+
+- (void)tableView:(NSTableView *)aTableView setObjectValue:(id)anObject forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
+{
 	[[_bugs objectAtIndex:rowIndex] setObject:anObject forKey:[aTableColumn identifier]];
 	[self updateDetailViews];
 }
 
 #pragma mark NSTableview delegate methods
-- (void)tableViewSelectionDidChange:(NSNotification *)aNotification {
+- (void)tableViewSelectionDidChange:(NSNotification *)aNotification
+{
 	if ( [_tableView selectedRow] > -1 )
 	{
 		self.bug = [self.bugs objectAtIndex:[_tableView selectedRow]];
@@ -575,5 +581,7 @@
 
     return NSTerminateNow;
 }
+
+
 
 @end
