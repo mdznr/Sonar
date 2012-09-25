@@ -5234,12 +5234,20 @@ wGw</bytes>
 					<int key="connectionID">1248</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">content</string>
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">managedObjectContext: managedObjectContext</string>
 						<reference key="source" ref="399559189"/>
 						<reference key="destination" ref="976324537"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="399559189"/>
+							<reference key="NSDestination" ref="976324537"/>
+							<string key="NSLabel">managedObjectContext: managedObjectContext</string>
+							<string key="NSBinding">managedObjectContext</string>
+							<string key="NSKeyPath">managedObjectContext</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
 					</object>
-					<int key="connectionID">1266</int>
+					<int key="connectionID">1316</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -7812,7 +7820,7 @@ wGw</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">1313</int>
+			<int key="maxID">1351</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -7828,7 +7836,6 @@ wGw</bytes>
 					<string key="className">SRAppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="addNote:">id</string>
 						<string key="appendMoreInformation:">id</string>
 						<string key="attach:">id</string>
 						<string key="closeNote:">id</string>
@@ -7839,16 +7846,10 @@ wGw</bytes>
 						<string key="saveAction:">id</string>
 						<string key="showDebugWindow:">id</string>
 						<string key="showMainWindow:">id</string>
-						<string key="showStateHeader:">NSButton</string>
 						<string key="signIn:">id</string>
 						<string key="submitIssue:">id</string>
-						<string key="updateNotes:">NSTextField</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="addNote:">
-							<string key="name">addNote:</string>
-							<string key="candidateClassName">id</string>
-						</object>
 						<object class="IBActionInfo" key="appendMoreInformation:">
 							<string key="name">appendMoreInformation:</string>
 							<string key="candidateClassName">id</string>
@@ -7889,10 +7890,6 @@ wGw</bytes>
 							<string key="name">showMainWindow:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="showStateHeader:">
-							<string key="name">showStateHeader:</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
 						<object class="IBActionInfo" key="signIn:">
 							<string key="name">signIn:</string>
 							<string key="candidateClassName">id</string>
@@ -7900,10 +7897,6 @@ wGw</bytes>
 						<object class="IBActionInfo" key="submitIssue:">
 							<string key="name">submitIssue:</string>
 							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="updateNotes:">
-							<string key="name">updateNotes:</string>
-							<string key="candidateClassName">NSTextField</string>
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">

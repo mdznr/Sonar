@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C93C910615FF8AD60068031D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96DCE0615907714008ECA40 /* CoreData.framework */; };
 		C93CFFFC15BA162000A5A057 /* PrioritySplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */; };
 		C9406FAF15C50815002927D2 /* SRNoteViewCloseButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9406FAE15C50815002927D2 /* SRNoteViewCloseButtonCell.m */; };
 		C94690A615C0B79900A461F2 /* SRDetailBody.m in Sources */ = {isa = PBXBuildFile; fileRef = C94690A515C0B79900A461F2 /* SRDetailBody.m */; };
@@ -143,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93C910615FF8AD60068031D /* CoreData.framework in Frameworks */,
 				C9C752F015929B6200813B63 /* WebKit.framework in Frameworks */,
 				C96DCE0315907714008ECA40 /* Cocoa.framework in Frameworks */,
 				C9B4D7621591721B0001B573 /* Foundation.framework in Frameworks */,

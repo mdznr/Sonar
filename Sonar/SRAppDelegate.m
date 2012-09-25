@@ -257,26 +257,23 @@
     return _persistentStoreCoordinator;
 }
 
-// Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.) 
-- (NSManagedObjectContext *)managedObjectContext
-{
-    if (_managedObjectContext) {
-        return _managedObjectContext;
-    }
-    
-    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
-    if (!coordinator) {
-        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-        [dict setValue:@"Failed to initialize the store" forKey:NSLocalizedDescriptionKey];
-        [dict setValue:@"There was an error building up the data file." forKey:NSLocalizedFailureReasonErrorKey];
-        NSError *error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:9999 userInfo:dict];
-        [[NSApplication sharedApplication] presentError:error];
-        return nil;
-    }
-    _managedObjectContext = [[NSManagedObjectContext alloc] init];
-    [_managedObjectContext setPersistentStoreCoordinator:coordinator];
-
-    return _managedObjectContext;
+- (NSManagedObjectContext *) managedObjectContext {
+	
+	if (_managedObjectContext) return _managedObjectContext;
+	
+	NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+	if (!coordinator) {
+		NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+		[dict setValue:@"Failed to initialize the store" forKey:NSLocalizedDescriptionKey];
+		[dict setValue:@"There was an error building up the data file." forKey:NSLocalizedFailureReasonErrorKey];
+		NSError *error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:9999 userInfo:dict];
+		[[NSApplication sharedApplication] presentError:error];
+		return nil;
+	}
+	_managedObjectContext = [[NSManagedObjectContext alloc] init];
+	[_managedObjectContext setPersistentStoreCoordinator: coordinator];
+	
+	return _managedObjectContext;
 }
 
 // Returns the NSUndoManager for the application. In this case, the manager returned is that of the managed object context for the application.
@@ -294,9 +291,6 @@
 
 - (IBAction)showDebugWindow:(id)sender
 {
-	if ( [_debugWindow isKeyWindow] ) {
-		[_debugWindow performClose:sender];
-	}
 	[_debugWindow makeKeyAndOrderFront:sender];
 }
 
