@@ -26,6 +26,7 @@
 //
 
 #import "SRAppDelegate.h"
+#import "PDKeychainBindings.h"
 
 #define kState @"state"
 #define kRank @"rank"
@@ -298,7 +299,8 @@
 
 - (void)controlTextDidChange:(NSNotification *)obj
 {
-	if ( obj.object == _appleID || obj.object == _password ) {
+	if ( obj.object == _appleID || obj.object == _password )
+	{
 		if ( [_appleID stringValue].length && [_password stringValue].length) {
 			[_signInButton setEnabled:YES];
 		} else {
@@ -306,7 +308,8 @@
 		}
 	}
 	
-	else if ( obj.object == _problemTitle ) {
+	else if ( obj.object == _problemTitle )
+	{
 		//	Used to update Window Title based on Problem Title
 		NSString *title = [_problemTitle stringValue];
 		if ( title.length )
@@ -317,18 +320,9 @@
 }
 
 - (IBAction)signIn:(id)sender
-{	
-	NSString *storedVal = [_password stringValue];
-	NSString *key = @"theAccountPW";
-	
-	[[NSUserDefaults standardUserDefaults] setObject:storedVal forKey:key];
-	
-	storedVal = [_appleID stringValue];
-	key = @"theAccountName";
-	
-	[[NSUserDefaults standardUserDefaults] setObject:storedVal forKey:key];
-	
-	[[NSUserDefaults standardUserDefaults] synchronize]; // this method is optional
+{
+	[[PDKeychainBindings sharedKeychainBindings] setObject:[_password stringValue] forKey:@"theAccountPW"];
+	[[PDKeychainBindings sharedKeychainBindings] setObject:[_appleID stringValue]  forKey:@"theAccountName"];
 	
 	[_webViewDelegate webView:_webView didSignInForUsername:[_password stringValue] andPassword:[_appleID stringValue]];
 }
