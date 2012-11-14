@@ -106,18 +106,6 @@
 					nil];
 	self.bugs = [NSMutableArray arrayWithObject:self.bug];
 	
-	NSMutableDictionary *bug3 = [NSMutableDictionary dictionaryWithDictionary:_bug];
-	[bug3 setObject:@"Insufficient Information" forKey:kState];
-	[self.bugs addObject:bug3];
-	
-	NSMutableDictionary *bug4 = [NSMutableDictionary dictionaryWithDictionary:_bug];
-	[bug4 setObject:@"3rd Party to Resolve" forKey:kState];
-	[self.bugs addObject:bug4];
-	
-	NSMutableDictionary *bug5 = [NSMutableDictionary dictionaryWithDictionary:_bug];
-	[bug5 setObject:@"Behaves Correctly" forKey:kState];
-	[self.bugs addObject:bug5];
-	
 	self.bug = [NSMutableDictionary dictionaryWithObjectsAndKeys:
 				@"Closed", kState,
 				[NSNumber numberWithInt:1], kRank,
@@ -496,7 +484,9 @@
 						 [NSMutableArray arrayWithObjects: nil], kAttachments,
 						 nil] atIndex:0];
 	[_tableView reloadData];
-	[_tableView selectRowIndexes:[[NSIndexSet alloc] initWithIndex:0] byExtendingSelection:NO];
+	
+//	[_tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:0] byExtendingSelection:NO];
+	
 	[self updateDetailViews];
 	
 	[_composeIssueWindow close];
