@@ -338,7 +338,10 @@
 
 - (IBAction)markAsResolved:(id)sender
 {
-	[_stampSound play];
+    if ( [[NSUserDefaults standardUserDefaults] boolForKey:@"playInterfaceSounds"] )
+    {
+        [_stampSound play];
+    }
 	[_bug setValue:@"Resolved" forKey:kState];
 	[self updateDetailViews];
 }
