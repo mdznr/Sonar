@@ -37,7 +37,8 @@ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 @interface SRAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *mainWindow;
-@property (assign) IBOutlet NSPanel *debugWindow;
+@property (assign) IBOutlet NSWindow *debugWindow;
+@property (assign) IBOutlet NSPanel *activityPanel;
 @property (assign) IBOutlet NSWindow *preferencesWindow;
 @property (assign) IBOutlet NSWindow *composeIssueWindow;
 
@@ -95,6 +96,7 @@ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 - (IBAction)showMainWindow:(id)sender;
 - (IBAction)showDebugWindow:(id)sender;
+- (IBAction)showActivityPanel:(id)sender;
 - (IBAction)signIn:(id)sender;
 
 - (IBAction)saveAction:(id)sender;

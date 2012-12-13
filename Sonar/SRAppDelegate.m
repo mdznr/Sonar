@@ -271,7 +271,7 @@
     return [[self managedObjectContext] undoManager];
 }
 
-#pragma mark Show/Hide Windows
+#pragma mark Show/Hide Windows and Panels
 
 - (IBAction)showMainWindow:(id)sender
 {
@@ -281,6 +281,11 @@
 - (IBAction)showDebugWindow:(id)sender
 {
 	[_debugWindow makeKeyAndOrderFront:sender];
+}
+
+- (IBAction)showActivityPanel:(id)sender
+{
+	[_activityPanel makeKeyAndOrderFront:sender];
 }
 
 #pragma mark Preferences
