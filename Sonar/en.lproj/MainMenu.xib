@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">12C60</string>
+		<string key="IBDocument.SystemVersion">12D44</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3079</string>
-		<string key="IBDocument.AppKitVersion">1187.34</string>
-		<string key="IBDocument.HIToolboxVersion">625.00</string>
+		<string key="IBDocument.AppKitVersion">1187.37</string>
+		<string key="IBDocument.HIToolboxVersion">626.00</string>
 		<dictionary class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="com.apple.InterfaceBuilder.CocoaPlugin">3079</string>
 			<string key="com.apple.WebKitIBPlugin">2053</string>
@@ -2239,13 +2239,13 @@ dw</string>
 							<object class="NSMutableString" key="NSToolbarItemIdentifier">
 								<characters key="NS.bytes">7246122E-A219-45FB-8F0F-93ADB8D40ECA</characters>
 							</object>
-							<string key="NSToolbarItemLabel">Submit</string>
-							<string key="NSToolbarItemPaletteLabel">Submit</string>
+							<string key="NSToolbarItemLabel">Send</string>
+							<string key="NSToolbarItemPaletteLabel">Send</string>
 							<string key="NSToolbarItemToolTip"/>
 							<nil key="NSToolbarItemView"/>
 							<object class="NSCustomResource" key="NSToolbarItemImage">
 								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">Sonar</string>
+								<string key="NSResourceName">Send</string>
 							</object>
 							<nil key="NSToolbarItemTarget"/>
 							<nil key="NSToolbarItemAction"/>
@@ -8358,6 +8358,7 @@ wGw</bytes>
 					<string key="className">SRAppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="addNote:">id</string>
 						<string key="appendMoreInformation:">id</string>
 						<string key="attach:">id</string>
 						<string key="closeNote:">id</string>
@@ -8369,10 +8370,16 @@ wGw</bytes>
 						<string key="showActivityPanel:">id</string>
 						<string key="showDebugWindow:">id</string>
 						<string key="showMainWindow:">id</string>
+						<string key="showStateHeader:">NSButton</string>
 						<string key="signIn:">id</string>
 						<string key="submitIssue:">id</string>
+						<string key="updateNotes:">NSTextField</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="addNote:">
+							<string key="name">addNote:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="appendMoreInformation:">
 							<string key="name">appendMoreInformation:</string>
 							<string key="candidateClassName">id</string>
@@ -8417,6 +8424,10 @@ wGw</bytes>
 							<string key="name">showMainWindow:</string>
 							<string key="candidateClassName">id</string>
 						</object>
+						<object class="IBActionInfo" key="showStateHeader:">
+							<string key="name">showStateHeader:</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
 						<object class="IBActionInfo" key="signIn:">
 							<string key="name">signIn:</string>
 							<string key="candidateClassName">id</string>
@@ -8424,6 +8435,10 @@ wGw</bytes>
 						<object class="IBActionInfo" key="submitIssue:">
 							<string key="name">submitIssue:</string>
 							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="updateNotes:">
+							<string key="name">updateNotes:</string>
+							<string key="candidateClassName">NSTextField</string>
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
@@ -8705,7 +8720,7 @@ wGw</bytes>
 			<string key="Note">{24, 24}</string>
 			<string key="Reply">{24, 24}</string>
 			<string key="Resolved">{24, 24}</string>
-			<string key="Sonar">{512, 512}</string>
+			<string key="Send">{24, 24}</string>
 		</dictionary>
 	</data>
 	<classes>

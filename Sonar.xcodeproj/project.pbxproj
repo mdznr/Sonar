@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C93C9089168404F700F92CB1 /* Send.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C93C9088168404F700F92CB1 /* Send.tiff */; };
 		C93C910615FF8AD60068031D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96DCE0615907714008ECA40 /* CoreData.framework */; };
 		C93CFFFC15BA162000A5A057 /* PrioritySplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */; };
 		C9406FAF15C50815002927D2 /* SRNoteViewCloseButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9406FAE15C50815002927D2 /* SRNoteViewCloseButtonCell.m */; };
@@ -67,6 +68,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C93C9088168404F700F92CB1 /* Send.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Send.tiff; path = Resources/Toolbar/Send.tiff; sourceTree = SOURCE_ROOT; };
 		C93CFFFA15BA162000A5A057 /* PrioritySplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrioritySplitViewDelegate.h; sourceTree = "<group>"; };
 		C93CFFFB15BA162000A5A057 /* PrioritySplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrioritySplitViewDelegate.m; sourceTree = "<group>"; };
 		C9406FAD15C50815002927D2 /* SRNoteViewCloseButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRNoteViewCloseButtonCell.h; sourceTree = "<group>"; };
@@ -428,6 +430,7 @@
 				C9A01A2F15AE328D001BC4B1 /* Note.tiff */,
 				C95B2B7F15914341002457DA /* Reply.tiff */,
 				C95B2B8015914341002457DA /* Resolved.tiff */,
+				C93C9088168404F700F92CB1 /* Send.tiff */,
 			);
 			name = "Toolbar Icons";
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				C94690EA15C1D84400A461F2 /* StampInsufficientInformation@2x.png in Resources */,
 				C94690EB15C1D84400A461F2 /* StampResolved.png in Resources */,
 				C94690EC15C1D84400A461F2 /* StampResolved@2x.png in Resources */,
+				C93C9089168404F700F92CB1 /* Send.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
