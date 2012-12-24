@@ -1,1 +1,7 @@
 DerivedData/*
+/Sonar.xcodeproj/xcuserdata/*
+!/Sonar.xcodeproj/xcuserdata/Matt.xcuserdatad/
+/Sonar.xcodeproj/xcuserdata/Matt.xcuserdatad/*
+!/Sonar.xcodeproj/xcuserdata/Matt.xcuserdatad/xcschemes/
+/Sonar.xcodeproj/xcuserdata/Matt.xcuserdatad/xcschemes/*
+!/Sonar.xcodeproj/xcuserdata/Matt.xcuserdatad/xcschemes/Sonar.xcscheme
