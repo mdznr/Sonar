@@ -78,17 +78,6 @@
 	
 	[_detailBody setVerticallyResizable:YES];
 	
-	// Set up custom Split View Delegate
-	_splitViewDelegate = [[PrioritySplitViewDelegate alloc] init];
-
-	[_splitViewDelegate setPriority:1 forViewAtIndex:0];
-	[_splitViewDelegate setMinimumLength:96.0 forViewAtIndex:0];
-	
-	[_splitViewDelegate setPriority:0 forViewAtIndex:1];
-	[_splitViewDelegate setMinimumLength:194.0 forViewAtIndex:1];
-	
-	[_splitView setDelegate:_splitViewDelegate];
-	
 	// Set up Table View
 	self.bug = [NSMutableDictionary dictionaryWithObjectsAndKeys:
 					@"Duplicate", kState,
@@ -421,20 +410,19 @@
 		[_noteView setHidden:YES];
 	}
 	
-	// Not sure if working ***
-	[_scrollView setBounds:[_scrollView frame]];
-	[_scrollView.subviews[0] setFrame:[_scrollView frame]];
-	[_scrollView.subviews[0] setBounds:[_scrollView bounds]];
-	//
+#warning just using this for debugging
+	[_detailBody setBackgroundColor:[NSColor redColor]];
 	
-	[_scrollView.subviews[0] setBackgroundColor:[NSColor whiteColor]];
+	// Just change the height to be _detailBody's y origin plus the height of the _detailBody.
+	[_scrollView.documentView setFrame:CGRectMake(0,0,_scrollView.frame.size.width, _scrollView.frame.size.height+1024)];
 	
 	[_detailBody setString:[_bug objectForKey:kDetails]];
-	[_detailBody sizeToFit]; // Does this work ***
 	
 	_stampView.state = [_bug objectForKey:kState];
 	
 	// Scroll to top ***
+#warning doesn't work
+	[_scrollView scrollPoint:NSMakePoint(0, 0)];
 	
 }
 
@@ -519,7 +507,8 @@
 
 - (void)applicationWillTerminate:(NSNotification *)notification
 {
-	[_splitView saveDefault];
+#warning save sizing for _splitView
+//	[_splitView saveDefault];
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender

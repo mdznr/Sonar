@@ -42,7 +42,7 @@ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 @property (assign) IBOutlet NSWindow *preferencesWindow;
 @property (assign) IBOutlet NSWindow *composeIssueWindow;
 
-@property (retain) IBOutlet SRSplitView *splitView;
+@property (retain) IBOutlet NSSplitView *splitView;
 @property (retain) PrioritySplitViewDelegate *splitViewDelegate;
 @property (strong) IBOutlet NSTableView *tableView;
 @property (strong) IBOutlet NSView *detailView;
@@ -59,7 +59,7 @@ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 @property (strong) IBOutlet NSTextField *detailBuild;
 @property (strong) IBOutlet NSTextField *detailClassification;
 @property (strong) IBOutlet NSTextField *detailReproducibility;
-@property (strong) IBOutlet NSText *detailBody;
+@property (strong) IBOutlet NSTextView *detailBody;
 @property (strong) IBOutlet SRStampView *stampView;
 
 @property (strong) NSSound *stampSound;

@@ -143,11 +143,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Sonar/SRAppDelegate.m"
-         timestampString = "376779234.07283"
+         timestampString = "378035727.025772"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "397"
-         endingLineNumber = "397"
+         startingLineNumber = "386"
+         endingLineNumber = "386"
          landmarkName = "-updateDetailViews"
          landmarkType = "5">
       </FileBreakpoint>
@@ -156,11 +156,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Sonar/SRAppDelegate.m"
-         timestampString = "376779234.07283"
+         timestampString = "378035727.025772"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "412"
-         endingLineNumber = "412"
+         startingLineNumber = "401"
+         endingLineNumber = "401"
          landmarkName = "-updateDetailViews"
          landmarkType = "5">
       </FileBreakpoint>
@@ -169,11 +169,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Sonar/SRAppDelegate.m"
-         timestampString = "376779234.07283"
+         timestampString = "378035727.025772"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "385"
-         endingLineNumber = "385"
+         startingLineNumber = "374"
+         endingLineNumber = "374"
          landmarkName = "-showStateHeader:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -182,11 +182,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Sonar/SRAppDelegate.m"
-         timestampString = "376779234.07283"
+         timestampString = "378035727.025772"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "346"
-         endingLineNumber = "346"
+         startingLineNumber = "335"
+         endingLineNumber = "335"
          landmarkName = "-markAsResolved:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -195,11 +195,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Sonar/SRAppDelegate.m"
-         timestampString = "376779234.07283"
+         timestampString = "378035727.025772"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "369"
-         endingLineNumber = "369"
+         startingLineNumber = "358"
+         endingLineNumber = "358"
          landmarkName = "-addNote:"
          landmarkType = "5">
       </FileBreakpoint>
